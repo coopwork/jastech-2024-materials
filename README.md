@@ -47,7 +47,7 @@
 1. **Клонируйте репозиторий:**
 
     ```bash
-    https://github.com/coopwork/jastech-2024-materials.git
+    git clone https://github.com/coopwork/jastech-2024-materials.git
     ```
 
 2. **Обновляйте локальный репозиторий регулярно, чтобы не пропустить новые материалы:**
