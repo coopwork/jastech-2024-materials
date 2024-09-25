@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #3362e5;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2c55c5;
+}
+
+.button:active {
+  background-color: #2344a1;
+  scale: .95;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: #ededed;
+  border-radius: 10px;
+  border: 2px solid #c5d1f3;
+  padding: 10px;
+  max-width: 350px;
+  box-shadow: 0 0 10px 3px #1e2f5d18;
+  transition: border-color .3s, box-shadow .3s;
+  animation: fade_up 1.5s ease-in-out;
+}
+
+.card:hover {
+  border-color: #bacaf6;
+  box-shadow: 0 0 15px 5px #1e2f5d39;
+}
+
+@keyframes fade_up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user__avatar {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.avatar__anim__border {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2px rgba(136, 0, 255, 0.206);
+  background:
+    linear-gradient(0deg,
+      rgba(0, 132, 255, 0.29),
+      rgba(136, 0, 255, 0.254));
+  border: 3px dotted #6ca5e1;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  animation:
+    avatar_border_rotate 2s infinite ease-in-out;
+}
+
+.user__avatar:hover .avatar__anim__border {
+  animation-play-state: paused;
+}
+
+@keyframes avatar_border_rotate {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.user__avatar img {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card__body {
+  margin: 15px 0;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
