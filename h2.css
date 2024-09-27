@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+h2{
+    color: white;
+}
+h4{
+    color: white;
+}
+p{
+    color: lightgray;
+    font-size: 15px;
+}
+.dude{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+button{
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: black;
+}
+select{
+    display: flex;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+input{
+    width: 94%;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
