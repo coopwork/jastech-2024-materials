@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="animate-bounce border-blue shadow-lg max-w-72 m-20 border-2 rounded-xl p-5 hover:bg-gray-light hover:shadow-2xl">
+    <div class="text-xl font-semibold">
+      Heading
+    </div>
+    <div class="py-1 my-1 border-b-2 border-t-2">
+      Content 
+    </div>
+    <div class="ml-[calc(50%-50px)]">
+      Footer
+    </div>
+  </div>
+</body>
+</html>
