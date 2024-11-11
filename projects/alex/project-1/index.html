@@ -7,28 +7,94 @@
     <title>Document</title>
 </head>
 <body>
-       
-    <form action="">
-        <div class="container" >
-            <div class="input" id="input">
-                <input class="id" type="text" placeholder="ID">
-                <input class="firstName" type="text" placeholder="Первое имя" />
-                <input class="lastName" type="text" placeholder="Последнее имя" />
-                <input class="email" type="email" placeholder="email"/>
-                
-            </div>
-        
-        
-            <div class="btn">
-    
-                <button type="button"  class="save">Записать</button>
-                <button type="button"  class="load" >Получить</button>	
-    
-            </div>
+    <div class="container" >
+    <header>
+        <div class="container header__h">
+            <h2 class="logo__h" >Логотип</h2>
+                <nav data-opened="false" class="nav__h">    
+                    <button class="burger__close">X</button>            
+                <a class="nav__s" href="#deviz">Главная</a>
+                <a class="nav__s" href="#content">О себе</a>
+                <a class="nav__s" href="#footer__all">Контакты</a>
+            </nav>
+            <button class="burger__open">
+                &#8801;
+            </button>
+           
         </div>
-        
+    </header>
 
-    </form>    
-    <script src="./main.js" ></script>
+        <div class="deviz" id="deviz">
+            <div class="container">
+                           <h1 class="content__text" >Движение-это жизнь</h1>
+            </div>
+       </div>
+
+    <div class="container">
+        <div class="card__all" id="content">
+            <div class="card__1">
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                debitis reprehenderit harum rem. Inventore, ut!</p>
+                <button class="btn" >читать</button>
+            </div>
+            <div class="card__1">
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                debitis reprehenderit harum rem. Inventore, ut!</p>
+                <button class="btn" >читать</button>
+            </div> <div class="card__1">
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                debitis reprehenderit harum rem. Inventore, ut!</p>
+                <button class="btn" >читать</button>
+            </div>
+            <div class="card__1">
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                debitis reprehenderit harum rem. Inventore, ut!</p>
+                <button class="btn" >читать</button>
+            </div>
+            <div class="card__1">
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                debitis reprehenderit harum rem. Inventore, ut!</p>
+                <button class="btn" >читать</button>
+            </div>
+            <div class="card__1">
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                debitis reprehenderit harum rem. Inventore, ut!</p>
+                <button class="btn" >читать</button>
+            </div>
+
+
+
+
+
+        </div>
+
+         
+    </div>
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="footer__all" id="footer__all">
+                    <div class="cop">
+                        &copy; 2024 «ALEX»
+                        </div>
+                    <div class="soc">
+                    <a class="teleg" href="https://t.me/AlexandrVah85" target="_blank"><img class="tele__img" src="./img/teleg.png" alt=""></a>
+                    <a class="inst" href="https://www.instagram.com/v.a.e_85?igsh=MXc1bWJjMjV5ZDZzbQ%3D%3D&utm_source=qr" target="_blank"><img class="inst__img" src="./img/inst.png" alt=""></a>
+                    <a class="wts" href="https://wa.me/+77029709090" target="_blank"><img class="wts__img" src="./img/wts.png" alt=""></a>
+                </div>
+                    
+                </div>
+            </div>
+        </footer>
+    
+          <script src="./main.js"></script>
 </body>
 </html>
