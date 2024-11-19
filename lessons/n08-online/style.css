@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.flexbox {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.flex-1 {
+  background-color: red;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.flex-2 {
+  background-color: blue;
+}
+
+.flex-3 {
+  background-color: green;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  /* background-color: #dddddd; */
+}
+
+header {
+  background-color: blue;
+}
+
+.content {
+  min-height: calc(100vh - 110px);
+}
+
+.partners {
+  padding: 5rem 0;
+  background-color: #dddddd;
+}
+
+footer {
+  padding: 2.5rem 0;
+  background-color: black;
+  color: white;
+}
