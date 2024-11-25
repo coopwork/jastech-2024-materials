@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rauhat - Frontend Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./icon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div onclick="window.location.href='#home';" class="logo">RAUHAT.</div>
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button onclick="window.location.href='#contact';" class="cta-button">
+          Let's Talk
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="hero-content">
+          <h1>Hi There, I Am Rauhat</h1>
+          <h2>Computer science student</h2>
+          <button
+            onclick="window.location.href='#services';"
+            class="view-works"
+          >
+            View Works
+          </button>
+        </div>
+        <div class="user__avatar">
+          <img src="./img/photo.jpg" alt="Avatar" />
+          <span class="avatar_anim_border"></span>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>
+              I am a 4th year student at the Shokan Ualikhanov University, I
+              love coding, design and modeling.
+            </h2>
+            <p>
+              Born in the North of Kazakhstan in 2003, I love to draw since
+              childhood and was good at studies. I also love to do all kinds of
+              creative work.
+            </p>
+            <p>
+              At school I started learning programming, but due to the lack of
+              technical support it was difficult. Already at the university, I
+              began to study coding in depth and independently.
+            </p>
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <span>Python</span>
+              <div class="skill-bar" style="width: 60%"><span>60%</span></div>
+            </div>
+            <div class="skill">
+              <span>C ++</span>
+              <div class="skill-bar" style="width: 40%"><span>40%</span></div>
+            </div>
+            <div class="skill">
+              <span>Adobe Photoshop</span>
+              <div class="skill-bar" style="width: 70%"><span>70%</span></div>
+            </div>
+            <div class="skill">
+              <span>AutoCad Maya</span>
+              <div class="skill-bar" style="width: 90%"><span>90%</span></div>
+            </div>
+            <div class="skill">
+              <span>Lego Mindstorms</span>
+              <div class="skill-bar" style="width: 70%"><span>70%</span></div>
+            </div>
+            <div class="skill">
+              <span>Unity/Unreal Engine 5</span>
+              <div class="skill-bar" style="width: 80%"><span>80%</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-grid">
+          <div class="achievement-item">
+            <h3>Best Programmer Award</h3>
+            <p>Olympiad within the university in programming, 1st place.</p>
+          </div>
+          <div class="achievement-item">
+            <h3>Most creative idea</h3>
+            <p>
+              There was an environmental campaign in the city, my idea won a
+              nomination
+            </p>
+          </div>
+          <div class="achievement-item">
+            <h3>Robotics competition</h3>
+            <p>A regional robotics competition was held in "Bolashak".</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+          <div class="education-item">
+            <h3>Secondary education</h3>
+            <p>Secondary school No. 2, Krasny Yar village, 2010-2021</p>
+          </div>
+          <div class="education-item">
+            <h3>Higher education</h3>
+            <p>KU Sh. Ualikhanov, 2021-2025</p>
+          </div>
+          <hr style="border: 1px solid #26185c; width: 100%" />
+          <h2>Courses</h2>
+          <div class="education-item">
+            <h3>Python-Beginner</h3>
+            <p>Coursera, Summer 2022</p>
+          </div>
+          <div class="education-item">
+            <h3>Game-Developer</h3>
+            <p>SkillBox, Spring - Summer 2023</p>
+          </div>
+          <div class="education-item">
+            <h3>Frontend-Developer</h3>
+            <p>JasTech, Autumn 2024 - Spring 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>My Projects</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <img
+              src="https://ictacademy.com.ng/wp-content/uploads/2024/05/autocad1.png"
+              alt="Web & Mobile Design"
+              height="200px"
+              width="300px"
+            />
+            <h3>AutoCad</h3>
+            <p>A simple building diagram obtained in freelancing</p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://veryutils.com/image/cache/mpseller/customer-30/snake-500x500.png"
+              alt="Web Development"
+              height="200px"
+              width="250px"
+            />
+            <h3>Python - Game</h3>
+            <p>A simple Python game using the pygame library</p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://preview.free3d.com/img/2015/12/2158638043349649037/evwjh9oq.jpg"
+              alt="E-commerce"
+              height="200px"
+              width="300px"
+            />
+            <h3>3D MAX</h3>
+            <p>3D max model given as exam work</p>
+          </div>
+        </div>
+        <div class="service-grid">
+          <div class="service-item">
+            <img
+              src="./img/car site screen.png"
+              alt="Web & Mobile Design"
+              height="200px"
+              width="300px"
+            />
+            <h3>Car web-site</h3>
+            <p>Website for cars, their sales and descriptions</p>
+          </div>
+          <div class="service-item">
+            <img
+              src="./img/2dgame.png"
+              alt="Web Development"
+              height="200px"
+              width="300px"
+            />
+            <h3>2D Game</h3>
+            <p>2D game on Unreal Engine</p>
+          </div>
+          <div class="service-item">
+            <img
+              src="./img/bot.png"
+              alt="E-commerce"
+              height="200px"
+              width="300px"
+            />
+            <h3>Telegram - bot</h3>
+            <p>Telegram bot that helps you create schedules</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Rauhat. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://web.telegram.org/"
+            aria-label="LinkedIn"
+            target="_blank"
+            >Telegram</a
+          >
+          <a href="https://github.com/" aria-label="GitHub" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.instagram.com/raukhat_a/?next=%2F"
+            aria-label="Twitter"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const burgerMenu = document.querySelector(".burger-menu");
+        const navLinks = document.querySelector(".nav-links");
+        const navItems = document.querySelectorAll(".nav-links li");
+
+        burgerMenu.addEventListener("click", () => {
+          navLinks.classList.toggle("nav-active");
+          burgerMenu.classList.toggle("toggle");
+
+          navItems.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = "";
+            } else {
+              link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.3
+              }s`;
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(https://uralcci.com/data/images/news/upload/137/65/13765.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+select, label {
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+label input {
+    margin-left: 8px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.catalog__item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.catalog__item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.catalog__item small {
+    color: #777;
+    font-size: 14px;
+}
+
+.catalog__item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.catalog__item p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+select, label {
+    width: 220px;
+}
+
+select {
+    width: 230px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
