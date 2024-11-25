@@ -221,3 +221,30 @@ poorItemsRemoveCheckbox.addEventListener('input', (e)=>{
 //   }
 // }));
 // console.log(test3.sort());
+
+
+
+
+async function getShopItems() {
+  const res = await fetch('./shop-items.json')
+  .then((response) => {
+    if (response.status === 404) {
+      PromiseRejectionEvent()
+    }
+    return response.json()
+  })
+  .then((json) => {
+    return json;
+  });
+
+  return res;
+}
+
+async function render() {
+  const response = await getShopItems();
+  console.log('all OK', response);
+  
+  getCatalog(response)
+}
+
+render()
