@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+  margin-top: 20px;
+}
+.card {
+  background-color: rgb(24, 24, 26);
+  color: #ebe3e3;
+  margin: 0 auto;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 2px solid rgb(34, 34, 36);
+}
+.card__header {
+  display: flex;
+  padding: 20px 0 5px 15px;
+}
+.card__header h3 {
+  font-size: 18px;
+  font-weight: 200;
+}
+.card__header img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.card__header-name {
+  position: relative;
+}
+
+.card__header-name p {
+  color: #ada8a8;
+  font-size: 14px;
+}
+
+/* span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid rgb(59, 59, 61);
+  width: 100%;
+} */
+hr {
+  border-top: 2px solid rgb(59, 59, 61);
+  border-bottom: none;
+}
+
+.card__header-name p {
+  position: absolute;
+  bottom: 5%;
+}
+.card__main {
+  padding: 10px 0 10px 15px;
+  font-size: 16px;
+}
+.card__footer {
+  display: inline-block;
+  padding: 10px 0 10px 10px;
+}
+
+.card__footer img {
+  width: 14px;
+  height: 14px;
+  color: rgb(21, 98, 170);
+}
+
+.card__footer a {
+  color: #1562aa;
+  text-decoration: none;
+  transition: 0.4s ease;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card__footer a:hover {
+  color: #1818d3;
+}
