@@ -19,32 +19,6 @@ export class Request {
     });
   }
 
-  async patch(endpoint, data) {
-    return this._fetch(endpoint, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-  }
-
-  async put(endpoint, data) {
-    return this._fetch(endpoint, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-  }
-
-  async delete(endpoint) {
-    return this._fetch(endpoint, {
-      method: "DELETE",
-    });
-  }
-
   async _fetch(endpoint, options) {
     try {
       const response = await fetch(`${this.baseUrl}${endpoint}`, options);
