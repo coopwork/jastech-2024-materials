@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+  
+    
+      <link
+         rel="stylesheet"
+         href="https://s.pageclip.co/v1/pageclip.css"
+         media="screen"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Control work 1</title>
+      <link
+         rel="shortcut icon"
+         href="./images/favicon.png"
+         type="image/x-icon"
+      />
+   </head>
+
+   <body>
+      <header class="shadow-2xl">
+         <div class="container header__wrapper">
+            <h2 class="header__logo">
+               <a href="#"
+                  ><img
+                     class="header__logo__img"
+                     src="./images/Logo.png"
+                     alt=""
+               /></a>
+            </h2>
+
+            <nav class="header__navigation">
+               <input type="checkbox" name="menu" id="btn-menu" />
+               <label c for="btn-menu">
+                  <img
+                     class="header__logo__min"
+                     src="./images/Logo.png"
+                     alt=""
+                  />
+
+                  <svg
+                     style="display: block; margin: auto"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     fill="currentColor"
+                     class="size-6"
+                  >
+                     <path
+                        fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd"
+                     />
+                  </svg>
+               </label>
+               <ul>
+                  <li><a href="#about"> Обо мне</a></li>
+                  <li><a href="#skills">Навыки</a></li>
+                  <li><a href="#projects">Проекты</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <div class="content">
+         <div class="container">
+            <div class="about shadow-2xl" id="about">
+               <div class="about__photo">
+                  <div class="about__image">
+                     <img
+                        class="drop-shadow-2xl"
+                        src="./images/me.png"
+                        alt="Photo"
+                     />
+                  </div>
+               </div>
+               <div class="about__text text-justify">
+                  <h1 class="about__h1">Обо мне</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nostrum dignissimos ipsa, ipsum perferendis alias expedita
+                     excepturi. Eius enim aliquam atque doloribus non at, unde
+                     ad, corrupti natus numquam, debitis facere. Lorem ipsum
+                     dolor sit amet consectetur adipisicing elit. A, fuga! Ut
+                     odio sequi modi nesciunt sit! Veniam vitae reiciendis
+                     voluptate fugit, ducimus corrupti delectus possimus optio
+                     veritatis rem ipsum quia. lorem
+                  </p>
+               </div>
+               <!-- <div class="timeline">
+               <ol class="items-center sm:flex px-4" >
+                  <li class="relative mb-6 sm:mb-0">
+                     <div class="flex items-center">
+                        <div
+                           class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
+                        >
+                           <svg
+                              class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                           >
+                              <path
+                                 d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                              />
+                           </svg>
+                        </div>
+                        <div
+                           class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
+                        ></div>
+                     </div>
+                     <div class="mt-3 sm:pe-8">
+                        <h3
+                           class="text-lg font-semibold text-gray-900 dark:text-white"
+                        >
+                           Начало обучения в JasTech
+                        </h3>
+                        <time
+                           class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                           >Первый урок 22 сентября 2024</time
+                        >
+                        <p
+                           class="text-base font-normal text-gray-500 dark:text-gray-400"
+                        >
+                           Основы HTML
+                        </p>
+                     </div>
+                  </li>
+
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                       <div
+                          class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
+                       >
+                          <svg
+                             class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                             aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg"
+                             fill="currentColor"
+                             viewBox="0 0 20 20"
+                          >
+                             <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                             />
+                          </svg>
+                       </div>
+                       <div
+                          class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
+                       ></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                       <h3
+                          class="text-lg font-semibold text-gray-900 dark:text-white"
+                       >
+                          Первая контрольная работа
+                       </h3>
+                       <time
+                          class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                          >2 октября 2024</time
+                       >
+                       <p
+                          class="text-base font-normal text-gray-500 dark:text-gray-400"
+                       >
+                          Создать Landing page
+                       </p>
+                    </div>
+                 </li>
+                 <li class="relative mb-6 sm:mb-0">
+                  <div class="flex items-center">
+                     <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full ring-0 ring-white dark:bg-blue-700 sm:ring-8 dark:ring-gray-700 shrink-0"
+                     >
+                        <svg
+                           class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                           aria-hidden="true"
+                           xmlns="http://www.w3.org/2000/svg"
+                           fill="currentColor"
+                           viewBox="0 0 20 20"
+                        >
+                           <path
+                              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                           />
+                        </svg>
+                     </div>
+                     <div
+                        class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
+                     ></div>
+                  </div>
+                  <div class="mt-3 sm:pe-8">
+                     <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                     >
+                        Презентация контрольной работы
+                     </h3>
+                     <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                        >27 октября 2024</time
+                     >
+                     <p
+                        class="text-base font-normal text-gray-500 dark:text-gray-400"
+                     >
+                        Оффлайн занятие
+                     </p>
+                  </div>
+               </li>
+               <li class="relative mb-6 sm:mb-0">
+                <div class="flex items-center">
+                   <div
+                      class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
+                   >
+                      <svg
+                         class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                         aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="currentColor"
+                         viewBox="0 0 20 20"
+                      >
+                         <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                         />
+                      </svg>
+                   </div>
+                  
+                </div>
+                <div class="mt-3 sm:pe-8">
+                   <h3
+                      class="text-lg font-semibold text-gray-900 dark:text-white"
+                   >
+                      Окончание обучения в JasTech
+                   </h3>
+                   <time
+                      class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                      >Март 2025</time
+                   >
+                   <p
+                      class="text-base font-normal text-gray-500 dark:text-gray-400"
+                   >
+                      Основы HTML, CSS, JS
+                   </p>
+                </div>
+             </li> 
+                  
+
+                 
+               </ol>
+            </div> -->
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="skills" id="skills">
+               <div
+                  class="skill text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        fill="#2563EB"
+                        class="bi bi-filetype-html"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           fill-rule="evenodd"
+                           d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"
+                        />
+                     </svg>
+                     HTML
+                  </h1>
+
+                  <div
+                     class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700"
+                  >
+                     <div
+                        class="bg-blue-600 h-4 rounded-full"
+                        style="width: 75%"
+                     ></div>
+                  </div>
+
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nostrum dignissimos ipsa, ipsum perferendis alias expedita
+                     excepturi. Eius enim aliquam atque doloribus non at, unde
+                     ad, corrupti natus numquam, debitis facere. Lorem ipsum
+                     dolor sit amet consectetur adipisicing elit. A, fuga! Ut
+                     odio sequi modi nesciunt sit! Veniam vitae reiciendis
+                     voluptate fugit, ducimus corrupti delectus possimus optio
+                     veritatis rem ipsum quia.
+                  </p>
+               </div>
+               <div
+                  class="skill text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        fill="#2563EB"
+                        class="bi bi-filetype-css"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           fill-rule="evenodd"
+                           d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823q.195.162.478.252.284.091.665.091.507 0 .859-.158.354-.158.539-.44.187-.284.187-.656 0-.336-.134-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.566-.21l-.621-.144a1 1 0 0 1-.404-.176.37.37 0 0 1-.144-.299q0-.234.185-.384.188-.152.512-.152.214 0 .37.068a.6.6 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.2-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.439 0-.776.15-.337.149-.527.421-.19.273-.19.639 0 .302.122.524.124.223.352.367.228.143.539.213l.618.144q.31.073.463.193a.39.39 0 0 1 .152.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.175 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM.806 13.693q0-.373.102-.633a.87.87 0 0 1 .302-.399.8.8 0 0 1 .475-.137q.225 0 .398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.4 1.4 0 0 0-.489-.272 1.8 1.8 0 0 0-.606-.097q-.534 0-.911.223-.375.222-.572.632-.195.41-.196.979v.498q0 .568.193.976.197.407.572.626.375.217.914.217.439 0 .785-.164t.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.8.8 0 0 1-.118.363.7.7 0 0 1-.272.25.9.9 0 0 1-.401.087.85.85 0 0 1-.478-.132.83.83 0 0 1-.299-.392 1.7 1.7 0 0 1-.102-.627zM6.78 15.29a1.2 1.2 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384q.106.073.25.114.142.041.319.041.245 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.463-.193l-.618-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422t.777-.149q.456 0 .779.152.326.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.246-.181.9.9 0 0 0-.37-.068q-.324 0-.512.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .404.175l.621.143q.326.075.566.211t.375.358.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375"
+                        />
+                     </svg>
+                     CSS
+                  </h1>
+                  <div
+                     class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700"
+                  >
+                     <div
+                        class="bg-blue-600 h-4 rounded-full"
+                        style="width: 25%"
+                     ></div>
+                  </div>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nostrum dignissimos ipsa, ipsum perferendis alias expedita
+                     excepturi. Eius enim aliquam atque doloribus non at, unde
+                     ad, corrupti natus numquam, debitis facere. Lorem ipsum
+                     dolor sit amet consectetur adipisicing elit. A, fuga! Ut
+                     odio sequi modi nesciunt sit! Veniam vitae reiciendis
+                     voluptate fugit, ducimus corrupti delectus possimus optio
+                     veritatis rem ipsum quia.numquam, debitis facere. Lorem
+                     ipsum dolor sit amet consectetur adipisicing elit. A, fuga!
+                     Ut odio sequi modi nesciunt sit! Veniam vitae reiciendis
+                     voluptate fugit, ducimus corrupti delectus possimus optio
+                     veritatis rem ipsum quia.
+                  </p>
+               </div>
+               <div
+                  class="skill text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50"
+                        height="50"
+                        fill="#2563EB"
+                        class="bi bi-filetype-js"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           fill-rule="evenodd"
+                           d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"
+                        />
+                     </svg>
+                     JS
+                  </h1>
+                  <div
+                     class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700"
+                  >
+                     <div
+                        class="bg-blue-600 h-4 rounded-full"
+                        style="width: 5%"
+                     ></div>
+                  </div>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nostrum dignissimos ipsa, ipsum perferendis alias expedita
+                     excepturi. Eius enim aliquam atque doloribus non at, unde
+                     ad, corrupti natus numquam, debitis facere. Lorem ipsum
+                     dolor sit amet consectetur adipisicing elit. A, fuga! Ut
+                     odio sequi modi nesciunt sit! Veniam vitae reiciendis
+                     voluptate fugit, ducimus corrupti delectus possimus optio
+                     veritatis rem ipsum quia.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="projects text-justify" id="projects">
+               <div
+                  class="project text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"
+                        />
+                     </svg>
+                     Проект № 1
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code-slash"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                        />
+                     </svg>
+                  </h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Reprehenderit a dolor eaque magnam. Dolor hic cupiditate
+                     beatae maiores, eos veniam eum ipsa ab at voluptas fugit
+                     facere incidunt commodi quia.
+                  </p>
+               </div>
+               <div
+                  class="project text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"
+                        />
+                     </svg>
+                     Проект № 2
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code-slash"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                        />
+                     </svg>
+                  </h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Reprehenderit a dolor eaque magnam. Dolor hic cupiditate
+                     beatae maiores, eos veniam eum ipsa ab at voluptas fugit
+                     facere incidunt commodi quia.
+                  </p>
+               </div>
+               <div
+                  class="project text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"
+                        />
+                     </svg>
+                     Проект № 3
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code-slash"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                        />
+                     </svg>
+                  </h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Reprehenderit a dolor eaque magnam. Dolor hic cupiditate
+                     beatae maiores, eos veniam eum ipsa ab at voluptas fugit
+                     facere incidunt commodi quia.
+                  </p>
+               </div>
+               <div
+                  class="project text-justify rounded-md border-2 border-gray-800 shadow-2xl"
+               >
+                  <h1 class="h1_other">
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"
+                        />
+                     </svg>
+                     Проект №4
+                     <svg
+                        style="
+                           display: inline;
+                           margin: auto;
+                           padding-bottom: 5px;
+                        "
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="38"
+                        fill="#2563EB"
+                        class="bi bi-code-slash"
+                        viewBox="0 0 16 16"
+                     >
+                        <path
+                           d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                        />
+                     </svg>
+                  </h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Reprehenderit a dolor eaque magnam. Lorem ipsum dolor sit
+                     amet consectetur adipisicing elit. Dolor amet perspiciatis
+                     ullam velit ipsum quam officia debitis porro nobis aliquam
+                     sequi vel temporibus, sed ut. Qui reprehenderit amet nemo
+                     asperiores?Dolor hic cupiditate beatae
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="contacts shadow-2xl" id="contacts">
+               <div><h1 class="h1_other">оставьте сообщение</h1></div>
+               <form
+                  action="https://send.pageclip.co/Vu1xhOTiLHv72oDi7DSa7KBfjLKItMd2"
+                  method="post"
+                  class="contact_form pageclip-form"
+                  id="contact_form"
+
+                  
+               >
+               
+                  <div class="md:flex md:items-center mb-6">
+                     <div class="md:w-1/3">
+                        <label
+                           class="block text-gray-600 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                           for="name"
+                        >
+                           Имя
+                        </label>
+                     </div>
+                     <div class="md:w-2/3">
+                        <input
+                           required
+                           class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#2563EB]"
+                           id="name"
+                           type="text"
+                           name="Имя"
+                           placeholder="Введите Ваше имя"
+                        />
+                     </div>
+                  </div>
+                  <div class="md:flex md:items-center mb-6">
+                     <div class="md:w-1/3">
+                        <label
+                           class="block text-gray-600 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                           for="E-mail"
+                        >
+                           E-mail
+                        </label>
+                     </div>
+                     <div class="md:w-2/3">
+                        <input
+                           required
+                           class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#2563EB]"
+                           id="E-mail"
+                           type="email"
+                           name="Почта"
+                           placeholder="Введите E-mail"
+                        />
+                     </div>
+                  </div>
+                  <div class="md:flex md:items-center mb-6">
+                     <div class="md:w-1/3">
+                        <label
+                           class="block text-gray-600 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                           for="phone"
+                        >
+                           Телефон
+                        </label>
+                     </div>
+                     <div class="md:w-2/3">
+                        <input
+                           required
+                           class="form__input bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#2563EB]"
+                           id="phone"
+                           type="tel"
+                           name="Телефон"
+                           placeholder="Введите номер"
+                        />
+                     </div>
+                  </div>
+                  <div class="md:flex md:items-center mb-6">
+                     <div class="md:w-1/3">
+                        <label
+                           class="block text-gray-600 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                           for="message"
+                        >
+                           Текст сообщения
+                        </label>
+                     </div>
+                     <div class="md:w-2/3">
+                        <textarea
+                           required
+                           class="form__message bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#2563EB]"
+                           id="message"
+                           type="text"
+                           placeholder="Введите сообщение"
+                           name="Сообщение"
+                        ></textarea>
+                     </div>
+                  </div>
+
+                  <div class="md:flex md:items-center">
+                     <div class="md:w-1/3"></div>
+                     <div class="md:w-2/3">
+                     
+                        <button
+                           class="pageclip-form__submit shadow bg-[#2563EB] hover:bg-[#286CFF] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                           
+                           type="submit"
+                        >
+                           Отправить
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         <div class="container">
+            <div class="footer__wrapper">
+               <div class="empty"></div>
+               <div class="copy">
+                  <a href="#"><p>&copy; Dam87 2024</p></a>
+               </div>
+               <div class="social">
+                  <a href="http://www.instagram.com">
+                     <img
+                        class="social__icon"
+                        src="./images/insta.png"
+                        alt="Instagram"
+                  /></a>
+                  <a href="https://wa.me/+77078456511">
+                     <img
+                        class="social__icon"
+                        src="./images/whatsapp.png"
+                        alt="Whatsapp"
+                  /></a>
+                  <a href="https://t.me/+77078456511">
+                     <img
+                        class="social__icon"
+                        src="./images/telegram.png"
+                        alt="Telegram"
+                  /></a>
+                  <a href="tel:+77078456511">
+                     <img
+                        class="social__icon"
+                        src="./images/phone.png"
+                        alt="Phone"
+                  /></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+   
+      <script
+         src="https://s.pageclip.co/v1/pageclip.js"
+         charset="utf-8"
+      ></script>
+   </body>
+</html>

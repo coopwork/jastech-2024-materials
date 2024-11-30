@@ -66,39 +66,32 @@ const request = new Request('https://jsonplaceholder.typicode.com');
 
 
 function renderUserList({
-  name = '',
   address = '',
   company = '',
-  username = '',
-  email = ''
+  name = '',
+  username = ''
 })
 
 
 {
   
-  const card = document.createElement('p');
-  const addressCityEl = document.createElement('p');
+  const card = document.createElement('article');
+  const addressEl = document.createElement('h3');
   const companyEl = document.createElement('p');
   const nameEl = document.createElement('p');
   const usernameEl = document.createElement('p');
-  const emailEl = document.createElement('a');
   
-  card.className = 'flex flex-wrap justify-between content-center space-x-2 h-full w-50wv text-slate-700 bg-white shadow-md rounded-xl bg-clip-border m-2 p-2',
-  emailEl.className = 'text-sm text-slate-500 text-decoration: underline',
-nameEl.className = 'text-sm font-semibold text-slate-700',
+  card.className = 'catalog__item'
 
-
-  addressCityEl.textContent = JSON.stringify(address.city);
-  emailEl.textContent = email;
+  addressEl.textContent = JSON.stringify(address.city);
   companyEl.textContent = JSON.stringify(company.name);
   nameEl.textContent = name;
   usernameEl.textContent = username;
   
+  card.appendChild(addressEl);
+  card.appendChild(companyEl);
   card.appendChild(nameEl);
   card.appendChild(usernameEl);
-  card.appendChild(companyEl);
-  card.appendChild(addressCityEl);
-  card.appendChild(emailEl);
   
   return card;
 }
@@ -110,4 +103,5 @@ function getUserFromJson(list) {
   
     requestMy.appendChild(card)
   });
+
 }

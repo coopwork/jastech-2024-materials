@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание №4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #101010;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #b0b0b0;
+        }
+
+        .card a {
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .form-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+        }
+
+        .form-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .form-card label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #b0b0b0;
+        }
+
+        .form-card input,
+        .form-card select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #e0e0e0;
+        }
+
+        .form-card button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        .form-card button:hover {
+            background-color: #444;
+        }
+
+        .form-card .deploy {
+            background-color: #007aff;
+            color: #fff;
+        }
+
+        .form-card .deploy:hover {
+            background-color: #005fcc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Первый блок -->
+    <div class="card">
+        <h3>NextUI</h3>
+        <p>Make beautiful websites regardless of your design experience.</p>
+        <a href="#">Visit source code on GitHub.</a>
+    </div>
+
+    <!-- Второй блок -->
+    <div class="form-card">
+        <h3>Create project</h3>
+        <p>Deploy your new project in one-click.</p>
+        <form>
+            <label for="projectName">Name</label>
+            <input type="text" id="projectName" placeholder="Name of your project">
+
+            <label for="framework">Framework</label>
+            <select id="framework">
+                <option value="" disabled selected>Select</option>
+                <option value="React">React</option>
+                <option value="Vue">Vue</option>
+                <option value="Angular">Angular</option>
+            </select>
+
+            <div style="display: flex; justify-content: space-between;">
+                <button type="button">Cancel</button>
+                <button type="submit" class="deploy">Deploy</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

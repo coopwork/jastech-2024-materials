@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <title>Lesson #19</title>
+  </head>
+  <body>
+    <h1>Lesson #19</h1>
+
+    <div class="app">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <div>
+      <!-- // В а тег помещаем полную версию изображения -->
+      <a
+        href="https://picsum.photos/200/300"
+        class="glightbox"
+        data-gallery="gallery1"
+      >
+        <!-- В img Помещаем миниатюру для предпросмотра -->
+        <img src="https://picsum.photos/200/300" alt="image" />
+      </a>
+      <a
+        href="https://picsum.photos/200/300"
+        class="glightbox"
+        data-gallery="gallery1"
+      >
+        <img src="https://picsum.photos/200/300" alt="image" />
+      </a>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

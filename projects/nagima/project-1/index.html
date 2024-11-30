@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing-page</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">NAG<span class="header__logo-text">IMA</span></a>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__item"><a href="#welcome" class="header__link">Главная</a></li>
+                        <li class="header__item"><a href="#education" class="header__link">Образование</a></li>
+                        <li class="header__item"><a href="#projects" class="header__link">Проекты</a></li>
+                        <li class="header__item"><a href="#achievements" class="header__link">Достижения</a></li>
+                        <li class="header__item"><a href="#contact" class="header__link">Контакты</a></li>
+                    </ul>
+                    <span class="close" id="close"><i class="fa-solid fa-xmark"></i></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section id="welcome" class="welcome">
+            <div class="container">
+                <div class="welcome__content">
+                    <h1>Добро пожаловать!</h1>
+                    <p><span class="welcome__name">Меня зовут Нагима,</span> и я рада видеть вас на своем сайте!</p>
+                    <p>Этот сайт — отражение моих интересов и опыта, которым хочу поделиться с вами. Здесь вы найдете
+                        информацию о моем образовании, проектах и достижениях.</p>
+                </div>
+                <div class="welcome__image">
+                    <img src="static/img/avatar.jpg" alt="avatar">
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="container">
+                <h2>Образование</h2>
+                <div class="education__content">
+                    <div class="education__image">
+                        <img src="static/img/edu.png" alt="education">
+                    </div>
+                    <div class="education__list">
+                        <div class="education__item">
+                            <h3>2017 - 2021 гг.: ГККП «Высший технический колледж, город Кокшетау»</h3>
+                            <p><strong>Специальность:</strong> Профессиональное обучение (по отраслям)</p>
+                            <p><strong>Квалификация:</strong> Мастер производственного обучения, технолог-строитель</p>
+                        </div>
+                        <div class="education__item">
+                            <h3>2021 - 2025 гг.: Кокшетауский Университет им. Ш. Уалиханова</h3>
+                            <p><strong>Специальность:</strong> Учитель информатики и робототехники</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Мои проекты</h2>
+                <div class="projects__list">
+                    <div class="project__item">
+                        <h3>Telegram-бот для интернет-магазина</h3>
+
+                        <div class="project__images">
+                            <img src="static/img/telegram_work.png" alt="Telegram screen">
+                            <img src="static/img/telegram.png" alt="Telegram">
+                        </div>
+                        <p>Проект: <strong>Телеграм-бот с использованием Fake Store API</strong></p>
+                        <p>Описание: Этот бот предоставляет доступ к спискам продуктов и категорий, используя Fake Store
+                            API. Пользователь может выбирать категории и получать информацию о продуктах прямо в
+                            Telegram.</p>
+                        <a href="https://web.telegram.org/k/#@OnlineFakeStoreBot" target="_blank" class="project__link">
+                            <button type="button">Подробнее</button>
+                        </a>
+                    </div>
+
+                    <div class="project__item">
+                        <h3>AudioTextify</h3>
+                        <div class="project__images">
+                            <img src="static/img/audiotextify_work.png" alt="AudioTextify screen">
+                            <img src="static/img/audiotextify.png" alt="AudioTextify">
+                        </div>
+                        <p>Проект: <strong>Веб-приложение для преобразования аудио в текст</strong></p>
+                        <p>Описание: Приложение преобразует аудиофайлы в текст с использованием Python и Flask. В основе
+                            проекта лежат библиотеки SpeechRecognition и langid для работы с аудио.</p>
+                        <a href="https://github.com/nagima-99/AudioTextify" target="_blank" class="project__link">
+                            <button type="button">Подробнее</button>
+                        </a>
+                    </div>
+
+                    <div class="project__item">
+                        <h3>CRM-system</h3>
+                        <div class="project__images">
+                            <img src="static/img/crm_work.png" alt="CRM screen">
+                            <img src="static/img/crm.png" alt="CRM">
+                        </div>
+                        <p>Проект: <strong>CRM-система для управления процессами в учебных заведениях</strong></p>
+                        <p>Описание: Система поддерживает работу трех типов пользователей: администратора, преподавателя
+                            и ученика, с возможностью управления расписанием, учетными записями.</p>
+                        <a href="https://github.com/nagima-99/crm" target="_blank" class="project__link">
+                            <button type="button">Подробнее</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <h2>Мои достижения</h2>
+                <div class="achievements__list">
+                    <div class="achievement__item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Онлайн курс от Coursera</h3>
+                        <p> Успешное завершение онлайн-курса по "Программирование для всех (начала работы с Python)" на
+                            платформе Coursera.</p>
+                    </div>
+
+                    <div class="achievement__item">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>Олимпиада по робототехнике</h3>
+                        <p>1 место на олимпиаде по робототехнике среди студентов университета.</p>
+                    </div>
+
+                    <div class="achievement__item">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Курс по Python</h3>
+                        <p> Успешное завершение курса по Python-разработчика.</p>
+                    </div>
+
+                </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Связаться со мной</h2>
+                <div class="contact__content">
+                    <div class="contact__form">
+                        <form action="/feedback" method="POST">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="contact__images">
+                        <img src="static/img/message.png" alt="message">
+                        <div class="social-icons">
+                            <a href="https://web.telegram.org/k/" target="_blank">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/nagazd/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/nagima-99" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NAGIMA</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close');
+        const navMenu = document.querySelector('.header__nav');
+        const links = document.querySelectorAll('.header__link');
+
+        menuIcon.addEventListener('click', () => {
+            navMenu.classList.add('active');
+        });
+
+        closeIcon.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

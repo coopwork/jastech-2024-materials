@@ -1,0 +1,155 @@
+<<<<<<< HEAD
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.create-project {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  border: 1px solid #fff;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 5px 0;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  background-color: #2a2a2a;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.btn-cancel {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-deploy {
+  background-color: #232e3f;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+=======
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.create-project {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  border: 1px solid #fff;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 5px 0;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  background-color: #2a2a2a;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.btn-cancel {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-deploy {
+  background-color: #232e3f;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+>>>>>>> 077a7b5f169e2a557c5196c41fbbcfff2118091c

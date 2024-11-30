@@ -1,14 +1,18 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container__item{
+.catalog__item{
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 65vw;
+    gap: 1.5rem;
+    border: 1px solid #000;
+    max-width: auto;
 }
 
+p{
+    margin: .5rem;
+}
 

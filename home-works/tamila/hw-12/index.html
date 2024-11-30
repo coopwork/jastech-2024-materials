@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сохранение данных в LocalStorage</title>
+    
+    <!-- Подключение шрифта Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Стили -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Данные пользователя</h1>
+    <form id="userForm">
+        <label for="id">ID:</label>
+        <input type="text" id="id" placeholder="Введите ID">
+
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" placeholder="Введите имя">
+
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" placeholder="Введите фамилию">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Введите email">
+
+        <button type="button" id="saveButton">Сохранить</button>
+        <button type="button" id="loadButton">Загрузить</button>
+    </form>
+
+    <!-- Подключение внешнего файла JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
