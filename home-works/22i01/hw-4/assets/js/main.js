@@ -103,4 +103,5 @@ function getUserFromJson(list) {
   
     requestMy.appendChild(card)
   });
+
 }
