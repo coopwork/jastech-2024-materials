@@ -9,6 +9,7 @@
 
 ## Что вас ждет?
 
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,materialui,bootstrap,vite,webpack,babel,nodejs,sass,git,github,postman,githubactions,codepen,figma&perline=10" />
 В рамках курса мы рассмотрим следующие технологии и инструменты:
 
 ### 🌱 **Начальный уровень:**
