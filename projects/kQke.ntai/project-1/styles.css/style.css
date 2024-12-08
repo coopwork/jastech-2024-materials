@@ -1,0 +1,329 @@
+ /* @import url(./light.css);
+@import url(./dark.css);  */
+:root {
+  color-scheme: dark light;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main-color);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--main-color);
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.name {
+  color: var(--color);
+  font-size: 24px;
+}
+
+span {
+  color: var(--bg-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--bg-color);
+  transition: 0.3s;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.img {
+  border-radius: 6px;
+  transition: 0.3s box-shadow;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.img:hover {
+  box-shadow: 0 4px 15px 15px rgba(71, 9, 109);
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.card, .card-2 {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #000, #272727);
+  border-radius: 7px;
+  margin: 10px; /* Add margin to cards for spacing */
+}
+
+.card::after, .card-2::after, .card::before, .card2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -8;
+  background: conic-gradient(from 90deg, #1f2397, #6420aa, #ff3ea5, #33da9d, #ff3ea5, #6420aa, #1f2937);
+  border-radius: inherit;
+  background-size: 400%;
+  width: calc(105% + 4px);
+  height: calc(105% + 4px);
+  z-index: -1;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.card::before, .card-2::before {
+  filter: blur(50px);
+}
+
+h2, h3, h4 {
+  color: var(--color);
+  text-align: center; /* Center text in headings */
+}
+.text{
+  font-size: 3rem;
+}
+.social{
+  color: var(--color);
+  text-align: center;
+}
+
+.footer{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    columns: var(--main-color);
+}
+.footer .social a{
+  font-size: 25px;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+  transform: scale(1.2)translateY(-10px);
+  background-color: var(--text-color);
+  color: black;
+  box-shadow: o o 25px var(--text-color);
+}
+.Hobbies{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.Hobbies .slider{
+  position: relative;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+}
+@keyframes autoRun{
+  from{
+    transform: perspective(1000px) rotateY(0deg);
+  }to{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.Hobbies .slider .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+.Hobbies .slider .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.oof{
+  margin: 5rem;
+  padding: 5rem;
+}
+.gyat{
+  border-radius: 6px;
+  box-shadow: 0 4px 15px 15px rgba(71, 9, 109);
+}
+.copyright{
+  color: var(--text-color);
+}
+.ggwp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.gay{
+  max-width: 400px;
+}
+/* div {
+  color: light-dark(black, white);
+  background-color: light-dark(white, black);
+} */
+
+.switcher {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  margin: 0;
+  margin-left: -50px;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: none;
+}
+
+/* Switcher Legend */
+
+.switcher__legend {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Switcher Radio */
+
+.switcher__radio {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  transition: filter 0.1s ease-in;
+}
+
+.switcher__radio:focus {
+  outline: none;
+}
+
+.switcher__radio--light {
+  background-image: url('../icons/light.svg');
+}
+
+.switcher__radio--auto {
+  background-image: url('../icons/auto.svg');
+}
+
+.switcher__radio--dark {
+  background-image: url('../icons/dark.svg');
+}
+
+/* Switcher Status */
+
+.switcher__status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 0.2);
+  border-radius: 18px;
+  background-color: rgb(255 255 255 / 0.5);
+  background-repeat: no-repeat;
+  background-image: url('../icons/status.svg');
+  background-size: 32px;
+  background-position: center;
+  transition: background-position 0.1s ease-in;
+}
+
+.switcher__radio:focus-visible ~ .switcher__status {
+  box-shadow: 0 0 0 2px black;
+}
+
+.switcher__radio--light:checked ~ .switcher__status {
+  background-position: left 2px center;
+}
+
+.switcher__radio--auto:checked ~ .switcher__status {
+  background-position: center center;
+}
+
+.switcher__radio--dark:checked ~ .switcher__status {
+  background-position: right 2px center;
+}
