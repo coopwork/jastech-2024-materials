@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.page__title{
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.tab__bar{
+  margin: 5rem 0;
+}
+
+.tab__buttons .tab__btn{
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.tab__buttons .tab__btn.active{
+  background-color: #96b7fd;
+}
+
+.tabs__content .tab__inner{
+  display: none;
+}
+
+.tabs__content .tab__inner.active{
+  display: block;
+}
