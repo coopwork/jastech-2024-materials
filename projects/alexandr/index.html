@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css? family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My landing page</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <a class="logo" href="#">LOGO</a>
+        <nav data-opened="false" class="navigation">
+          <button class="burger_close">X</button>
+          <a class="nav__link" href="#" data-scroll="#features">Features</a>
+          <a class="nav__link" href="#" data-scroll="#works">Works</a>
+          <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+          <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
+          <a class="nav__link" href="#" data-scroll="#download">Download</a>
+        </nav>
+        <button class="burger_open">&#8801;</button>
+      </div>
+    </header>
+    
+    <!--Intro-->
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <img src="img.jpg" alt="Alexander"/>
+          <h1 class="intro__title">
+            Александр Юрчук
+          </h1>
+          <h2 class="intro_subtitle">
+            Лендинг — это любая страница, которая призывает пользователя что-то сделать. Например, подписаться на рассылку, купить билет на конференцию, запросить смету или просто скачать презентацию. В отличие от сайта, на лендинге пользователю предлагают сделать что-то одно. Например, на сайт компании приходят самые разные люди.
+          </h2>
+          <a href="https://gmail.com" target="_blank" class="btn btn--red btn--long"> My email</a>
+          <a href="https://www.youtube.com/@Alexander_Yurchuk555" target="_blank" class="btn btn--red btn--long"> My YouTube channal</a>
+        </div>
+      </div>
+    </div>
+    
+    <!--Features-->
+    <div class="container" id="features">
+      <div class="features">
+        <div class="features__item">
+          <img class="features__icon" src="img/features/feature-1.png" alt="" />
+          <h4 class="features__title">Easily Customised (Легко настроить)</h4>
+          <div class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egetas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla
+          </div>
+        </div>
+
+        <div class="features__item">
+          <img class="features__icon" src="img/features/feature-2.png" alt="" />
+          <h4 class="features__title">Responsive Ready (Адапт-я готов-ть)</h4>
+          <div class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egetas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla
+          </div>
+        </div>
+
+        <div class="features__item">
+          <img class="features__icon" src="img/features/feature-3.png" alt="" />
+          <h4 class="features__title">Modern Design (Соврем-й дизаин)</h4>
+          <div class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egetas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla
+          </div>
+        </div>
+
+        <div class="features__item">
+          <img class="features__icon" src="img/features/feature-4.png" alt="" />
+          <h4 class="features__title">Clean Code (Чистый код)</h4>
+          <div class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egetas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla
+          </div>
+        </div>
+
+        <div class="features__item">
+          <img class="features__icon" src="img/features/feature-5.png" alt="" />
+          <h4 class="features__title">Ready To Ship (Готов к отправке)</h4>
+          <div class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egetas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla
+          </div>
+        </div>
+
+        <div class="features__item">
+          <img class="features__icon" src="img/features/feature-6.png" alt="" />
+          <h4 class="features__title">Download For Free (Скач беспл.)</h4>
+          <div class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egetas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla
+          </div>
+        </div>
+      </div>
+      <!-- /.features -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Works -->
+    <div class="works" id="works">
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-1.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-2.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-3.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-4.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-5.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-6.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-7.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/works/work-8.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team" id="team">
+      <div class="container">
+        <div class="team__inner">
+          <div class="team__item">
+            <img class="team__photo" src="img/team/team-1.jpg" alt="" />
+            <div class="team__name">Юрчук Александр</div>
+            <div class="team__prof">Начинающий, frontend</div>
+            <div class="team__text">
+              <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justro sit amet risus.
+              </p>
+              <p>
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="img/twitter1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="img/vk1.svg" height="25" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="team__item">
+            <img class="team__photo" src="img/team/team-2.jpg" alt="" />
+            <div class="team__name">Юрчук Вероника</div>
+            <div class="team__prof">Асистент разработчика</div>
+            <div class="team__text">
+              <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justro sit amet risus.
+              </p>
+              <p>
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="img/twitter1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="img/vk1.svg" height="25" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="team__item">
+            <img class="team__photo" src="img/team/team-3.webp" alt="" />
+            <div class="team__name">Джейсон Стейтем</div>
+            <div class="team__prof">Спонсор проекта</div>
+            <div class="team__text">
+              <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justro sit amet risus.
+              </p>
+              <p>
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="img/twitter1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="img/vk1.svg" height="25" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="team__item">
+            <img class="team__photo" src="img/team/team-4.jpg" alt="" />
+            <div class="team__name">Алешкин Алексей</div>
+            <div class="team__prof">Дизайнер</div>
+            <div class="team__text">
+              <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justro sit amet risus.
+              </p>
+              <p>
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="img/twitter1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="img/vk1.svg" height="25" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.team__inner -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.team -->
+
+    <!-- Testimonials -->
+    <div class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__item">
+          <div class="reviews__photo">
+            <img class="reviews__img" src="img/reviews/review-1.1.jpg" alt="" />
+          </div>
+          <div class="reviews__content">
+            <div class="reviews__text">
+              "Integer posuere erat a ante venenatis dapibus posuere velit
+              aliquet. Donec sed odio dui. Aenean eu leo quam..."
+            </div>
+            <div class="reviews__author">
+              Susan Sims, Interaction Disigner at XYZ
+            </div>
+          </div>
+        </div> <!-- /.container -->
+      </div> <!-- /.reviews -->
+    </div>
+    
+    <!-- Download -->
+     <div class="download" id="download">
+      <div class="container">
+        <h3 class="download__title">
+          Вы готовы начать? Загрузите сейчас бесплатно!</h3>
+          <div class="download__text">
+            <p>Fusce dapibus, tellus ac cursus commodo</p>
+          </div>
+          <a class="btn btn--red btn--long" href="#">Скачать здесь</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <h4 class="footer__title">Расположение</h4>
+            <address class="footer__address">
+              <div>Казахстан</div>
+              <div>г.Кокшетау Ауельбекова 120</div>
+            </address>
+          </div>
+
+          <div class="footer__block">
+            <h4 class="footer__title">Поделитесь с любовью</h4>
+            <div class="social social--footer">
+
+              <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="img/twitter1.svg" height="25" alt="">
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="img/vk1.svg" height="25" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__block">
+            <h4 class="footer__title">About landing page</h4>
+            <div class="footer__text">
+              <p>
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Donec ullamcorper nulla non metus auctor fringilla
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /.footer__inner -->
+      </div>
+      <!-- /.container -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright__text">
+            <span>2024 &copy; My Landing Page</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+     <script src="./app.js"></script>
+  </body>
+</html>
