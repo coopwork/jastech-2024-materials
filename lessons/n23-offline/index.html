@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lesson #23</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Lesson #23</h1>
+
+      <form method="post" enctype="multipart/form-data">
+        <div id="fileDropZone">
+          <div class="fileInside">
+            <p class="text-center text-2xl mb-5">
+              &#10063;
+              <span id="fileDropZoneFileName"> имя_файла.xlsx </span>
+            </p>
+            <small class="block text-center text-foreground/50">
+              Нажмите что бы выбрать другой файл <br />
+              или перетащите его в эту область
+            </small>
+          </div>
+
+          <small class="fileEmpty block text-center text-foreground/50">
+            <span class="text-5xl text-muted">&#10063;</span> <br />
+            Нажмите что бы выбрать файл <br />
+            или перетащите его в эту область
+          </small>
+        </div>
+
+        <input
+          required
+          id="fileDropZoneInput"
+          class="hidden"
+          type="file"
+          name="excel_file"
+        />
+
+        <button
+          class="mx-auto block bg-primary hover:bg-primary/75 transition-colors text-primary-foreground font-semibold 
+          py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+          type="submit"
+        >
+          Загрузить
+        </button>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
