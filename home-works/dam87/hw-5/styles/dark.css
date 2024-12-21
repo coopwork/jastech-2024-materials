@@ -1,0 +1,22 @@
+:root {
+  
+   --back-image: url("../images/bg_dark.png");
+   --title-color: #ff762f;
+   --card-box-shadow: 0 0 10px 3px #29251f;
+   --text-color:#d4d4d4;
+   --hover-box-shadow: 0 8px 12px rgba(73, 56, 35, 0.322);
+   --option-color: #242424;
+   --scheme:dark;
+}
+
+.switcher__radio {
+    filter: invert(1);
+  }
+  
+  .switcher__radio:checked {
+    filter: invert(0);
+  }
+  
+  .switcher__status {
+    filter: invert(1);
+  }

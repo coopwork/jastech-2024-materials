@@ -1,0 +1,65 @@
+@import url(./light.css);
+@import url(./dark.css);
+
+:root {
+   
+   --back-image: url("../images/bg.png");
+   --title-color: rgb(0, 137, 208);
+   --card-box-shadow: 0 0 10px 3px #0a173a18;
+   --text-color: #000;
+   --hover-box-shadow: 0 8px 12px rgba(28, 35, 66, 0.247);
+}
+
+.catalog {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   padding: 1rem;
+}
+
+.catalog__item {
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+   border-radius: 0.5rem;
+   padding: 20px;
+   box-shadow: var(--card-box-shadow);
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.catalog__item:hover {
+   transform: translateY(-5px);
+   box-shadow: var(--hover-box-shadow)
+}
+
+.card__title {
+   font-size: 1.5rem;
+   color: var(--title-color);
+}
+
+.card__price{
+   align-self: flex-end;
+   padding-top: .5rem;
+  
+}
+
+small, p, h1, label, .select>select {
+   color: var(--text-color);
+}
+
+@media (max-width: 900px) {
+   .catalog {
+     grid-template-columns: repeat(2, 1fr);
+      min-width: 50%;
+   }
+ }
+
+  @media (max-width: 600px) {
+    .catalog {
+       grid-template-columns: 1fr;
+       min-width: 50%;
+       
+       justify-content: center;
+    }
+ }
+
