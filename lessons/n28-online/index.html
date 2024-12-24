@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My page">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Lesson #29</title>
+</head>
+<body>
+  
+  <h1>
+    Lesson #29
+  </h1>
+
+  <div>
+    <button id="debug">click</button>
+  </div>
+
+  <div class="app">
+    <h1>Интерактивное изучение событий JavaScript</h1>
+  <p>Выберите событие, чтобы изучить его поведение и результаты.</p>
+  <div class="controls">
+    <div id="event-list"></div>
+    <button id="clear-log">Очистить Лог</button>
+  </div>
+  <div id="test-area">
+    <h2>Тестовая зона</h2>
+    <button id="test-button">Кнопка</button>
+    <input type="text" id="test-input" placeholder="Введите текст">
+    <form id="test-form">
+      <input type="text" name="name" placeholder="Ваше имя">
+      <input type="email" name="email" placeholder="Ваш email">
+      <button type="submit">Отправить</button>
+    </form>
+    <div id="mouse-area">Область мыши</div>
+  </div>
+  <div id="log-area">
+    <h2>Результаты</h2>
+    <div id="output">Здесь будет отображаться лог событий.</div>
+  </div>
+  </div>
+
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/fetch-override.js"></script>
+  <script type="module" src="./assets/js/debugging.js"></script>
+  <script type="module" src="./assets/js/array-methods.js"></script>
+</body>
+</html>
