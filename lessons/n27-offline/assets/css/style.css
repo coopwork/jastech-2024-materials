@@ -1,0 +1,7 @@
+.flex {
+  display: flex;
+}
+.flex-none {
+  flex: none;
+  width: 100%;
+}
