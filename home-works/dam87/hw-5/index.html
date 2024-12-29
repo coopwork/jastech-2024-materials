@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="light dark" />
+      <meta
+         name="theme-color"
+         media="(prefers-color-scheme: light)"
+         content="#c7cbcc"
+      />
+      <meta
+         name="theme-color"
+         media="(prefers-color-scheme: dark)"
+         content="#273a43"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      
+      <link rel="stylesheet" href="./styles/style.css" />
+      <link
+         rel="stylesheet"
+         href="./styles/light.css"
+         media="(prefers-color-scheme: light)"
+      />
+      <link
+         rel="stylesheet"
+         href="./styles/dark.css"
+         media="(prefers-color-scheme: dark)"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <title>Homework #18</title>
+   </head>
+   <body>
+      
+
+      <div class="container">
+         <div class="app">
+            <h1>HW #18</h1>
+         </div>
+         <div class="sort">
+            <select
+               class="py-3 px-4 pe-9 block w-2/6 border-t-gray-dark rounded-lg text-base focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+               name=""
+               id="shop_filter"
+            >
+               <option value="default">Стандартно</option>
+               <option value="onTitle">По названию</option>
+               <option value="poor">Сначала дешевле</option>
+               <option value="rich">Сначала дороже</option>
+               <option value="storageMin">Остаток на складе меньше</option>
+               <option value="storageMax">Остаток на складе больше</option>
+            </select>
+            <div class="empty"></div>
+            <label for="removePoorItems">
+               <input
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  id="removePoorItems"
+                  type="checkbox"
+               />
+               Убрать товары дешевле 500$
+            </label>
+            <div class="empty"></div>
+            <div class="switch">
+               <fieldset class="switcher">
+                  <legend class="switcher__legend">Схема</legend>
+                  <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+                  <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+                  <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+                  <div class="switcher__status"></div>
+              </fieldset>
+            </div>
+         </div>
+         <div class="catalog"></div>
+      </div>
+      <script type="module" src="./js/main.js"></script>
+      <script src="./js/color_scheme.js"></script>
+   </body>
+</html>

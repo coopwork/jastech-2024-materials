@@ -1,0 +1,175 @@
+@import url(./shop-items.css);
+
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-optical-sizing: auto;
+  font-size: large;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--back-image);
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.app {
+  text-align: center;
+  padding: 1rem;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.sort {
+  display: flex;
+  justify-content:flex-start;
+  padding: 20px;
+  text-align: center;
+}
+
+.empty {
+  width: 3%;
+}
+
+
+
+#removePoorItems {
+  
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 0.3rem;
+  accent-color: var(--title-color);
+  color-scheme:var(--scheme);
+  
+}
+
+
+#shop_filter {
+  color-scheme:var(--scheme);
+  padding: 0.2rem;
+  width: 33%;
+  border-radius: 0.5rem;
+  /* box-shadow: var(--card-box-shadow); */
+  background-color: var(--option-color);
+  color: var(--text-color);
+  height: 28px;
+}
+
+select > option {
+  border: 0;
+  color: var(--text-color);
+  background-color: var(--option-color);
+  padding-right: 15px;
+  height: 31px;
+  width: 220px;
+}
+
+
+.switch{
+
+  width: 30%;
+
+}
+
+
+
+
+.switcher {
+  position: absolute;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: none;
+  
+}
+
+.switcher__legend {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switcher__radio {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  transition: filter 0.1s ease-in;
+}
+
+.switcher__radio:focus {
+  outline: none;
+}
+
+.switcher__radio--light {
+  background-image: url("../icons/light.svg");
+}
+
+.switcher__radio--auto {
+  background-image: url("../icons/auto.svg");
+}
+
+.switcher__radio--dark {
+  background-image: url("../icons/dark.svg");
+}
+
+.switcher__status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 0.2);
+  border-radius: 18px;
+  background-color: rgb(255 255 255 / 0.5);
+  background-repeat: no-repeat;
+  background-image: url("../icons/status.svg");
+  background-size: 24px;
+  background-position: center;
+  transition: background-position 0.1s ease-in;
+}
+
+.switcher__radio:focus-visible ~ .switcher__status {
+  box-shadow: 0 0 0 2px black;
+}
+
+.switcher__radio--light:checked ~ .switcher__status {
+  background-position: left 2px center;
+}
+
+.switcher__radio--auto:checked ~ .switcher__status {
+  background-position: center center;
+}
+
+.switcher__radio--dark:checked ~ .switcher__status {
+  background-position: right 2px center;
+}
+
+
+
+@media (max-width: 600px) {
+  .check_label{
+    width: 7.2rem;
+  }
+  
+}
