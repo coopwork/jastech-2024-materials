@@ -1,0 +1,33 @@
+/* Sky */
+
+.sky {
+  --sky-color: #273a43;
+  --sky-image: url("../img/zml.jpg");
+  background-image: var(--sky-image);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Body */
+
+.body {
+  --body-color: #fff566;
+  --body-shadow: rgb(222 168 33 / 0.4);
+  --body-glow: rgb(70 130 180 / 0.4);
+}
+
+/* Switcher */
+
+.switcher__radio {
+  filter: invert(0);
+}
+
+.switcher__radio:checked {
+  filter: invert(1);
+}
+
+.switcher__status {
+  filter: invert(0);
+}
