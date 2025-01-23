@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ShowHidePassword from './components/PasswordInput';
 
 function App() {
+  const [password, setPassword] = useState("");
   return (
     <div className="App">
-      <ShowHidePassword />
+      <ShowHidePassword value={password} onChange={(e) => setPassword(e.target.value)}/>
     </div>
   );
 }
