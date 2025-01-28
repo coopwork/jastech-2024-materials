@@ -1,0 +1,114 @@
+import {Fragment, useState} from "react";
+import './App.css'
+import {Button, InputNumber, Select} from "antd";
+import {ActionType, CashType, CurrencyType} from "./types/cash.type.ts";
+
+const {Option} = Select;
+
+function App() {
+	const [cash, setCash] = useState<CashType>({
+		balance: 1500,
+		action: "plus",
+		value: 0,
+		currency: "USD"
+	});
+
+	const handleChangeValue = (value: string) => {
+		if (!isNaN(+value)) {
+			setCash(prevState => ({
+				...prevState,
+				value: +value
+			}))
+		}
+	};
+
+	const handleChangeAction = (value: ActionType) => {
+		setCash(prevState => ({
+			...prevState,
+			action: value
+		}))
+	};
+
+	const handleChangeCurrency = (value: CurrencyType) => {
+		setCash(prevState => ({
+			...prevState,
+			currency: value
+		}))
+	}
+
+	const handleApproveMyCash = () => {
+		if (cash.action === "plus") {
+			setCash(prevState => ({
+				...prevState,
+				balance: prevState.balance + cash.value
+			}))
+		} else {
+			setCash(prevState => ({
+				...prevState,
+				balance: prevState.balance - cash.value
+			}))
+		}
+	}
+
+	const selectBefore = (
+			<Select
+					value={cash.action}
+					onSelect={handleChangeAction}
+					style={{width: 60}}
+			>
+				<Option value="plus">+</Option>
+				<Option value="minus">-</Option>
+			</Select>
+	);
+	const selectAfter = (
+			<Select
+					value={cash.currency}
+					onSelect={handleChangeCurrency}
+					style={{width: 60}}
+			>
+				<Option value="USD">$</Option>
+				<Option value="EUR">€</Option>
+				<Option value="GBP">£</Option>
+				<Option value="CNY">¥</Option>
+			</Select>
+	);
+
+
+	return (
+			<Fragment>
+				<h1>WORKING</h1>
+
+				<div style={{
+					display: 'flex',
+					flexWrap: 'wrap',
+					justifyContent: 'space-between',
+					width: 300
+				}}>
+					{
+						[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
+								<Fragment key={item}>
+									<div style={{width: '50%'}}>
+										{item}
+									</div>
+									<div style={{width: '50%'}}>
+										{item + 100}
+									</div>
+								</Fragment>
+						))
+					}
+				</div>
+
+
+				Ваш баланс: {cash.balance}
+				<InputNumber
+						addonBefore={selectBefore}
+						addonAfter={selectAfter}
+						value={cash.value}
+						onInput={handleChangeValue}
+				/>
+				<Button danger={true} type='primary' onClick={handleApproveMyCash}>Button</Button>
+			</Fragment>
+	)
+}
+
+export default App
