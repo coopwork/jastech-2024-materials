@@ -8,6 +8,7 @@ import Home from "./components/Home.jsx";
 
 function App() {
 
+  //   prop drilling
 
   return (
     <UserProvider>
