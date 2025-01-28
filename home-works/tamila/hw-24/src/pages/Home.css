@@ -1,0 +1,39 @@
+/* Контейнер для страницы Home */
+.home-container {
+    padding: 20px;
+    background-color: var(--background-color); /* Тема страницы */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Заголовок страницы */
+.home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color); /* Цвет текста зависит от темы */
+    margin-bottom: 30px;
+    transition: color 0.3s ease; /* Плавное изменение цвета текста при смене темы */
+}
+
+/* Добавим стили для адаптивности */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Стили для улучшения адаптивности на маленьких экранах */
+@media (max-width: 480px) {
+    .home-container {
+        padding: 15px;
+    }
+
+    .home-title {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+}
