@@ -1,0 +1,91 @@
+/* Определяем переменные для светлой темы */
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #333;
+    --card-background-color-light: #fff;
+    --card-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --card-title-color-light: #333;
+    --card-description-color-light: #666;
+}
+
+/* Темная тема */
+.dark {
+    --background-color-dark: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --card-background-color-dark: #34495e;
+    --card-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --card-title-color-dark: #ecf0f1;
+    --card-description-color-dark: #bdc3c7;
+}
+
+/* Общие стили для постов */
+.posts-container {
+    padding: 20px;
+    background-color: var(--background-color-light); /* Светлый фон по умолчанию */
+}
+
+.posts-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--text-color-light); /* Светлый цвет текста */
+}
+
+/* Карточка поста */
+.card {
+    box-shadow: var(--card-shadow-light); /* Светлая тень по умолчанию */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--card-background-color-light); /* Светлый фон для карточки */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--card-title-color-light); /* Светлый цвет для заголовка */
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: var(--card-description-color-light); /* Светлый цвет для описания */
+}
+
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Темная тема */
+.dark .posts-container {
+    background-color: var(--background-color-dark); /* Темный фон для контейнера постов */
+}
+
+.dark .posts-title {
+    color: var(--text-color-dark); /* Темный цвет для текста */
+}
+
+.dark .card {
+    box-shadow: var(--card-shadow-dark); /* Темная тень */
+    background-color: var(--card-background-color-dark); /* Темный фон для карточки */
+}
+
+.dark .card-title {
+    color: var(--card-title-color-dark); /* Темный цвет для заголовка */
+}
+
+.dark .card-description {
+    color: var(--card-description-color-dark); /* Темный цвет для описания */
+}
