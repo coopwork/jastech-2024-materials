@@ -1,14 +1,15 @@
 import './App.css'
-import {Button} from "@/components/ui/button.tsx";
+import AppRouter from "@/lib/app-router.tsx";
+import Header from "@/components/base/header.tsx";
 
 function App() {
 
-
-  return (
-    <>
-        <Button>Test</Button>
-    </>
-  )
+	return (
+			<>
+				<Header/>
+				<AppRouter/>
+			</>
+	)
 }
 
 export default App
