@@ -1,0 +1,48 @@
+.todoBlock {
+  padding: 20px;
+  background-color: #0b3b84;
+  border-radius: 8px;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.headText {
+  color: white;
+}
+
+.todoList {
+  margin-top: 10px;
+}
+
+.todoItem {
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todoForm {
+  display: flex;
+  gap: 10px;
+}
+
+.todoInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todoButton {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0c9cdf;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todoButton:hover {
+  background-color: #0d48eb;
+}
