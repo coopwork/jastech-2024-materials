@@ -1,0 +1,139 @@
+/* SEARCHING FORM */
+
+.search-container-show {
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 30rem;
+    height: auto;
+    text-align: center;
+    animation: showBlock .7s linear forwards;
+  }
+
+  @keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+    
+  @media screen and (max-width: 850px) {
+    .search-container-show {
+      top: 2rem;
+      right: -.5rem;
+      margin-top: 2rem;
+      width: 20rem;
+    }
+  }
+  
+  .search-container-hide {
+    display: none;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  .search-input:focus {
+    border-color: gray;
+    box-shadow: 0 0 8px gray(76, 175, 80, 0.7);
+  }
+  
+  .search__results {
+    margin: 1.2rem;
+  }
+  
+  .search-button {
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+  }
+  
+  .search-button:active {
+    background-color: #555;
+    transform: scale(1);
+  }
+  
+  .search-button-close {
+    position: absolute;
+    text-decoration: none;
+    padding: 12px 25px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 2rem;
+    margin-top: 15px;
+    top: -20px;
+    right: 5px;
+  }
+  
+  #find_cont {
+    text-align: left;
+    /* padding-left: 1rem; */
+  }
+  
+  .s_result {
+    padding-top: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 2rem;
+  
+    &:hover {
+      color: #b8b8b8;
+    }
+  }
+
+  .s_result-img{
+    height: 5rem;
+    width: 4rem;
+  }
+
+  .s_result-title{
+margin-bottom: .5rem;
+  }
+
+  .s_result-year{
+    font-size: .8rem;
+    color: lightgray;
+    
+  }
+
+  .search-button-close svg{
+    position: absolute;
+    right: 8px;
+  }
+  
