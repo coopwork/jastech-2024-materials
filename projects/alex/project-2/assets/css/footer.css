@@ -1,0 +1,105 @@
+/* footer */
+
+
+
+
+.footer{
+    height: 5rem;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer__all {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    border-top: 1px solid #4a4f52;
+}
+
+@media screen and (max-width: 800px) {
+    .footer__all {
+        height: 5rem;
+        justify-content: center;
+    }
+}
+
+
+.weather {
+    font-size: 15px;
+    width: 40%;
+    display: flex;
+    font-family: "Inter", sans-serif;
+    align-items: center
+}
+
+@media screen and (max-width:750px) {
+    .weather {
+        display: none;
+    }
+}
+
+.currency {
+    margin-left: 2rem;
+    margin-right: 0;
+}
+
+.tele__img,
+.inst__img,
+.wts__img {
+    width: 2rem;
+    margin-right: 5px;
+}
+
+.teleg,
+.inst,
+.wts {
+    color: #fff;
+}
+
+.soc {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    background-color: #000;
+    font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width:750px) {
+    .soc {
+        display: none;
+    }
+}
+
+.soc a {
+    margin-left: 1rem;
+}
+
+.temp_img {
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    margin-right: 0;
+}
+
+.cop {
+    display: flex;
+}
+
+@media screen and (max-width:750px) {
+    .cop {
+        justify-content: center;
+    }
+}
