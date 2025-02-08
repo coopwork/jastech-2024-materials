@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherMap</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/image/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/image/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/image/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/image/icon/site.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/news.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/image/logo.png" alt="Логотип" class="logo" />
+      <div class="header-brand">
+        <h1 class="brand-title">WeatherMap</h1>
+        <p class="brand-subtitle">By BugSquashers</p>
+      </div>
+      <nav class="nav">
+        <button class="mobile-menu-btn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link">Погода и Карта</a></li>
+          <li><a href="./exchange.html" class="nav-link">Курс Валют</a></li>
+          <li><a href="#" class="nav-link">Новости</a></li>
+          <li>
+            <a href="./contact.html" class="nav-link">О разработчиках</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="controls">
+        <label for="news-count">Количество новостей:</label>
+        <input type="number" id="news-count" min="1" max="16" value="4" />
+        <button id="load-news-btn">Загрузить новости</button>
+      </div>
+      <div id="news-container" class="news-container">
+        <!-- Новости будут загружены сюда -->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div id="random-phrase">
+          <div id="phrase">Загрузка...</div>
+          <div id="author">Загрузка...</div>
+      </div>
+      <button id="next-quote">Следующая цитата</button>
+      <div class="row">
+          <p> BugSquashers © 2025 Никакие права не защищены </p>
+          <a href="https://github.com/BugSquashersApp" target="_blank" class="github-link">
+          
+          </a>
+        </div>
+    </footer>
+  
+     <script src="./assets/js/random.phrase.js"></script>
+    <script type="module" src="./assets/js/news.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
