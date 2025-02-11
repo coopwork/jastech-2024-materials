@@ -15,15 +15,15 @@ const Home = () => {
       <Pagination className='my-7'>
         <PaginationContent>
           {[1, 2, 3, 4, 5].map((page) => (
-            <PaginationItem
-              className='relative'
-              key={page}
-            >
+            <PaginationItem className='relative' key={page}>
               <Link
-                className='absolute top-0 left-0 bottom-0 right-0'
-                to={`?page=${page}`}
+                  className='absolute top-0 left-0 bottom-0 right-0'
+                  to={`?page=${page}`}
               />
-              <PaginationLink>{page}</PaginationLink>
+              <PaginationLink>
+
+                {page}
+              </PaginationLink>
             </PaginationItem>
           ))}
         </PaginationContent>
