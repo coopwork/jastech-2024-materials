@@ -3,15 +3,21 @@ import useGetPostById from '@/utils/api/json-placeholder/hooks/use-get-post-by-i
 import { Badge } from '@/components/ui/badge.tsx';
 import { Button } from '@/components/ui/button.tsx';
 import AnotherPostsList from '@/components/lists/another-posts-list.tsx';
+import { Loader } from 'lucide-react';
 
 const PostId = () => {
   const navigate = useNavigate();
   const { postId } = useParams();
-  const { data } = useGetPostById(`${postId}`);
+  const { data, isPending } = useGetPostById(`${postId}`);
 
   return (
     <div className='container mx-auto flex gap-4'>
-      {data ? (
+      {isPending ? (
+        <div className='min-h-[30vh] w-full flex items-center justify-center flex-col'>
+          <Loader className='w-24 h-24 animate-spin' />
+          <h1 className='text-xl'>Loading...</h1>
+        </div>
+      ) : data ? (
         <div className='my-10'>
           <img
             className='w-full rounded-md'

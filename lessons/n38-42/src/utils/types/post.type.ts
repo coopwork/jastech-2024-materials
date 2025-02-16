@@ -12,3 +12,10 @@ export type PostType = {
   updatedAt: string;
   userId: number;
 };
+
+export type PaginationType = {
+  data: PostType[][];
+  page: number;
+  limit: number;
+  count: number;
+};

@@ -1,45 +1,19 @@
-import useGetPosts from '@/utils/api/json-placeholder/hooks/use-get-posts.tsx';
 import PostCard from '@/components/cards/post-card.tsx';
 import PostCardSkeleton from '@/components/skeletons/post-card.skeleton.tsx';
-import { Input } from '@/components/ui/input.tsx';
-import { ChangeEvent, useEffect, useState } from 'react';
 import { PostType } from '@/utils/types/post.type.ts';
 
-const PostsList = () => {
-  const { data, isPending } = useGetPosts();
-  const [filteredPosts, setFilteredPosts] = useState<PostType[]>(data || []);
+type PropsType = {
+  posts: PostType[];
+  isLoading: boolean;
+};
 
-  const submitSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    const search: string = e.target.value;
-    if (data?.length) {
-      setFilteredPosts(
-        data?.filter(
-          (post) =>
-            post.title.toLowerCase().includes(search.toLowerCase()) ||
-            post.content.toLowerCase().includes(search.toLowerCase()),
-        ),
-      );
-    }
-  };
-
-  useEffect(() => {
-    if (data?.length) {
-      setFilteredPosts(data);
-    }
-  }, [data]);
-
+const PostsList = ({ posts, isLoading }: PropsType) => {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
-      <div className='lg:col-span-4 flex items-center gap-3'>
-        <Input
-          onChange={submitSearch}
-          placeholder='Найти пост...'
-        />
-      </div>
-      {isPending ? (
+      {isLoading ? (
         [...Array(12)].map((_, i) => <PostCardSkeleton key={i} />)
-      ) : filteredPosts?.length ? (
-        filteredPosts?.map((post) => (
+      ) : posts?.length ? (
+        posts?.map((post) => (
           <PostCard
             key={post.id}
             post={post}
