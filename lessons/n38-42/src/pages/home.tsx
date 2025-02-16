@@ -40,6 +40,11 @@ const Home = () => {
     if (data?.length) {
       setFilteredPosts(data);
     }
+    if (searchParams.get('search')) {
+      submitSearch({
+        target: { value: searchParams.get('search') || '' },
+      } as ChangeEvent<HTMLInputElement>);
+    }
   }, [data]);
 
   useEffect(() => {
@@ -81,6 +86,7 @@ const Home = () => {
       <div className='my-5'>
         <Input
           onChange={submitSearch}
+          defaultValue={searchParams.get('search') || ''}
           placeholder='Найти пост...'
         />
       </div>
