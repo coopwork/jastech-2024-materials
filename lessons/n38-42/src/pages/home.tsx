@@ -19,7 +19,7 @@ const Home = () => {
     limit: 20,
     count: 100,
   });
-  console.log(pagination);
+
   const { data, isPending } = useGetPosts();
   const [filteredPosts, setFilteredPosts] = useState<PostType[]>(data || []);
   const submitSearch = (e: ChangeEvent<HTMLInputElement>) => {

@@ -1,0 +1,8 @@
+{
+  "app_name": "LOGO",
+  "navigation": {
+    "home": "Home",
+    "users": "Users",
+    "about_us": "About us"
+  }
+}

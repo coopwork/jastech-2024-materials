@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge.tsx';
 import { Button } from '@/components/ui/button.tsx';
 import AnotherPostsList from '@/components/lists/another-posts-list.tsx';
 import { Loader } from 'lucide-react';
+import CommentsList from '@/components/lists/comments-list.tsx';
 
 const PostId = () => {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const PostId = () => {
             <Badge>{data?.category}</Badge>
             <time>{new Date(data?.publishedAt).toLocaleString()}</time>
           </div>
+          <CommentsList postId={`${postId}`} />
         </div>
       ) : (
         <div className='w-full flex flex-col justify-center items-center h-[50vh] gap-5'>

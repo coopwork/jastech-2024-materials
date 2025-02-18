@@ -22,7 +22,7 @@ const Navigation = () => {
               to={path}
               className={navigationMenuTriggerStyle()}
             >
-              {t(`navigation.${title}`)}
+              {t(`${title}`)}
             </Link>
           </NavigationMenuItem>
         ))}
