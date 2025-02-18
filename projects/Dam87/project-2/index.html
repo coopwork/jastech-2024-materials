@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/hystmodal.min.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/burger.css">
+  <link rel="stylesheet" href="./assets/css/search.css">
+  <!-- <link rel="stylesheet" href="./assets/css/snow.min.css"> -->
+  <link rel="stylesheet" href="./assets/css/rating.css">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>FrontDead Movie project</title>
+</head>
+
+<body>
+  <!-- <div class="snowblock"></div> -->
+  <header class="header">
+    <swiper-container class="mySwiper swiper-two" pagination="true" pagination-clickable="true" navigation="false" space-between="20" centered-slides="false" autoplay-delay="60000" autoplay-disable-on-interaction="true">
+    </swiper-container>
+    <div class="container">
+      <div class="header__menu">
+        <a href="./index.html">
+          <div class="header__menu-logo">
+            <img class="logo_png" src="./assets/img/header/logo.png" alt="logo">
+          </div>
+        </a>
+        <div class="header__menu-item">
+          <nav data-opened="false" class="nav__h">
+            <button class="burger__close"><img src="./assets/img/close-square.svg" alt="" srcset=""></button>
+            <a href="./index.html">Главная</a>
+            <a href="#just_released">Новые</a>
+            <a href="#top">Лучшие</a>
+            <a href="#random">Случайные</a>
+            <a href="./news.html">Статьи о кино</a>
+          </nav>
+        </div>
+        <div class="header__menu-user">
+          <ul>
+            <li class="search__btn">
+              <svg width="23px" height="23px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#fff" stroke="#fff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M448 768A320 320 0 1 0 448 128a320 320 0 0 0 0 640z m297.344-76.992l214.592 214.592-54.336 54.336-214.592-214.592a384 384 0 1 1 54.336-54.336z" fill="#fff">
+                  </path>
+                </g>
+              </svg>
+            </li>
+          </ul>
+          <button class="burger__open">&#8801;</button>
+          <!-- SEARCHING FORM -->
+          <div class="search-container-hide">
+            <a href="#" class="search-button-close"><img src="./assets/img/close-square.svg" alt="" srcset=""></a>
+            <input type="text" placeholder="Поиск фильма..." class="search-input" id="find">
+            <div id="find_cont">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="element">
+      <div class="bar">
+        <div class="items">
+          <div class="item">
+            <img src="./assets/img/karusel/Disney.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/HBOMax.svg" alt="" class="img__hbo">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/marvel.svg" alt="">
+          </div>
+          <div class="item">
+            <img class="img__geg" src="./assets/img/karusel/netflix.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/pixar.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/star-wars.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/Disney.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/HBOMax.svg" alt="" class="img__hbo">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/marvel.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="items">
+          <div class="item">
+            <img class="img__geg" src="./assets/img/karusel/netflix.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/pixar.svg" alt="">
+          </div>karusel
+          <div class="item">
+            <img src="./assets/img/karusel/star-wars.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/Disney.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/HBOMax.svg" alt="" class="img__hbo">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/marvel.svg" alt="">
+          </div>
+          <div class="item">
+            <img class="img__geg" src="./assets/img/karusel/netflix.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/pixar.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/karusel/star-wars.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <!-- БЛОК НЕДАВНО ВЫШЕДШИЕ -->
+    <div class="container">
+      <h3 id="just_released">Недавно вышедшие</h3>
+      <swiper-container class="mySwiper swiper-JR" pagination-dynamic-bullets="true" pagination-clickable="true" navigation="true">
+      </swiper-container>
+    </div>
+    <!-- БЛОК ТОП  -->
+    <div class="container">
+      <h3 id="top">Лучшие фильмы</h3>
+      <div class="best">
+        <p class="best_p">Выберите количество фильмов</p>
+        <input type="range" min="6" max="15" value="6" class="slider" id="myRange">
+        <p id="quantity">Количество лучших фильмов на странице: </p>
+      </div>
+      <div class="week__block">
+      </div>
+    </div>
+    <!-- БЛОК С РАНДОМНЫМ ФИЛЬМОМ -->
+    <div class="container">
+      <h3 id="random">Случайные фильмы</h3>
+    </div>
+    <div class="random__block">
+      <div class="container">
+        <div class="random__container">
+          <div class="random__about-movie">
+            <div class="random__hero-name">
+            </div>
+            <div class="random__movie-info">
+              <p class="random__movie-rating">Рейтинг: </p>
+              <p class="random__year">Год: </p>
+              <p class="random__genre">Жанр: </p>
+            </div>
+            <div class="desc_container">
+              <p class="random__descript"></p>
+            </div>
+            <a class="random_film_trailer_btn" data-hystmodal="#swiper_movie">Трейлер</a>
+          </div>
+          <div class="swiper randomSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide_1">
+                <img class="random_img_1" src="" alt="">
+                <p class="random__movie-name_1"></p>
+                <div class="random__rating-genre">
+                  <p class="random__rating_1"></p>
+                  <p class="random__genre_1"></p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide_2">
+                <img class="random_img_2" src="" alt="">
+                <p class="random__movie-name_2"></p>
+                <div class="random__rating-genre">
+                  <p class="random__rating_2"></p>
+                  <p class="random__genre_2"></p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide_3">
+                <img class="random_img_3" src="" alt="">
+                <p class="random__movie-name_3"></p>
+                <div class="random__rating-genre">
+                  <p class="random__rating_3"></p>
+                  <p class="random__genre_3"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="empty">
+    </div>
+  </main>
+  <div class="hystmodal" id="swiper_movie" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button data-hystclose class="hystmodal__close">Закрыть</button>
+        <iframe class="trailer" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__all" id="footer__all">
+      <div class="weather">
+        <p>Погода в Кокшетау:   </p>
+        <img src="" class="weather_icon" alt="" />  
+        <p class="temp"></p>
+        <p class="description"></p>
+        <p class="currency">Один доллар равен </p>
+      </div>
+      <p class="cop" id="copyright">Copyright &copy; FrontDead</p>
+      <div class="soc">
+        <img class="tele__img" src="./assets/img/footer/github.svg" alt="" />
+        <a class="teleg" href="https://github.com/DamZh87" target="_blank">DamZh87</a>
+        <a class="inst" href="https://github.com/22i01" target="_blank">22i01</a>
+        <a class="wts" href="https://github.com/AlexVah02" target="_blank">Alex</a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/lib/swiper-element-bundle.min.js"></script>
+  <script src="./assets/lib/hystmodal.min.js"></script>
+  <script src="./assets/js/burger.js"></script>
+  <script src="./assets/js/search.js"></script>
+  <!-- <script src="./assets/lib/Snow.js"></script> -->
+
+</body>
+
+</html>
