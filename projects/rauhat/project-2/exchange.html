@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherMap</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/image/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/image/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/image/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/image/icon/site.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/exchange.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/image/logo.png" alt="Логотип" class="logo" />
+      <div class="header-brand">
+        <h1 class="brand-title">WeatherMap</h1>
+        <p class="brand-subtitle">By BugSquashers</p>
+      </div>
+      <nav class="nav">
+        <button class="mobile-menu-btn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html" class="nav-link">Погода и Карта</a>
+          </li>
+          <li><a href="#" class="nav-link">Курс Валют</a></li>
+          <li><a href="./news.html" class="nav-link">Новости</a></li>
+          <li>
+            <a href="./contact.html" class="nav-link">О разработчиках</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="weather-section">
+        <div class="weather-content">
+          <div class="container">
+            <div class="headerCon">
+              <h1>Конвертер валют</h1>
+            </div>
+
+            <div class="converter">
+              <div>
+                <select id="fromCurrency" class="currency-select"></select>
+                <input
+                  type="number"
+                  class="currency-input"
+                  id="fromAmount"
+                  value="1"
+                />
+              </div>
+
+              <div style="text-align: center">
+                <button id="swapButton">⇄</button>
+              </div>
+
+              <div>
+                <select id="toCurrency" class="currency-select"></select>
+                <input type="number" class="currency-input" id="toAmount" />
+              </div>
+            </div>
+
+            <div class="controls">
+              <div>
+                <label class="dateNumber"> Дата:</label>
+                <input type="date" class="date-picker" value="2024-01-23" />
+              </div>
+              <div class="margin-preview">
+                <label>Предварительный просмотр межбанковской ставки</label>
+                <select class="margin-selector">
+                  <option value="0">+/- 0%</option>
+                  <option value="1">+/- 1%</option>
+                  <option value="2">+/- 2%</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div id="random-phrase">
+          <div id="phrase">Загрузка...</div>
+          <div id="author">Загрузка...</div>
+      </div>
+      <button id="next-quote">Следующая цитата</button>
+      <div class="row">
+          <p> BugSquashers © 2025 Никакие права не защищены </p>
+          <a href="https://github.com/BugSquashersApp" target="_blank" class="github-link">
+          
+          </a>
+        </div>
+    </footer>
+  
+     <script src="./assets/js/random.phrase.js"></script>
+    <script type="module" src="./assets/js/exchange-app.js"></script>
+    <script type="module" src="./assets/js/exchange-main.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
