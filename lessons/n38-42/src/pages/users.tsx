@@ -1,17 +1,13 @@
-
-
 import UsersList from '@/components/lists/users-list.tsx';
 
-import {useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import useGetUsers from '@/utils/api/json-placeholder/hooks/use-get-users';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { UserType } from '@/utils/types/user.type.ts';
 import { Input } from '@/components/ui/input.tsx';
 
-
 const Users = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  
 
   const { data, isPending } = useGetUsers();
   const [filteredUsers, setFilteredUsers] = useState<UserType[]>(data || []);
@@ -40,7 +36,6 @@ const Users = () => {
     }
   }, [data]);
 
-
   return (
     <div className='container mx-auto mb-10'>
       <div className='my-5'>
@@ -52,15 +47,9 @@ const Users = () => {
       </div>
 
       <UsersList
-        isLoading={isPending} 
-        users = {filteredUsers} 
+        isLoading={isPending}
+        users={filteredUsers}
       />
-
-
-
-
-
-
     </div>
   );
 };

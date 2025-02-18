@@ -9,8 +9,6 @@ type PropsType = {
 
 const UsersList = ({ users, isLoading }: PropsType) => {
   return (
-    
-    
     <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
       {isLoading ? (
         [...Array(12)].map((_, i) => <UserCardSkeleton key={i} />)
@@ -26,8 +24,6 @@ const UsersList = ({ users, isLoading }: PropsType) => {
           Список пользователей пуст
         </h2>
       )}
-     
-   
     </div>
   );
 };
