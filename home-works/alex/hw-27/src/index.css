@@ -2,11 +2,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #eecccb;
 }
 
 .header {
   padding: 2rem;
   background-color: #eecccc;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.cont{
+  display: flex;
+  align-items: center;
+  margin-left: 35rem;
+  
+}
+
+.fon{
+  background-color: #eecccb;
+  width: 100%;
+
 }
 
