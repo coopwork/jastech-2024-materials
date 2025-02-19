@@ -1,0 +1,27 @@
+{
+  "app_name": "ЛОГО",
+  "find post": "Найти пост...",
+  "comments": "Kомментариев нет",
+  "similar news": "Похожие новости",
+  "this post was not found": "Такой пост не найден!",
+  "back": "Назад",
+  "find user": "Найти пользователя...",
+  "404": "404 Страница не найдена",
+  "the list of posts is empty": "Список постов пуст",
+  "user list is empty": "Список пользователей пуст",
+  "loading": "Загрузка",
+  
+  "navigation": {
+    "home": "Главная",
+    "users": "Пользователи",
+    "about_us": "О нас"
+    },
+
+
+  "tema" :{
+    "light": "Светлая",
+    "dark": "Темная",
+    "system": "Системная"
+  }
+
+}

@@ -1,0 +1,26 @@
+{
+  "app_name": "LOGO",
+  "find post": "Find post...",
+  "comments": "No comments",
+  "similar news": "Similar news",
+  "this post was not found": "This post was not found!",
+  "back": "Back",
+  "find user": "Find user...",
+  "404": "404 Page not found",
+  "the list of posts is empty": "The list of posts is empty",
+  "user list is empty": "User list is empty",
+  "loading": "Loading",
+
+  "navigation": {
+    "home": "Home",
+    "users": "Users",
+    "about_us": "About us"
+  },
+
+  "tema" :{
+    "light": "Light",
+    "dark":   "Dark",
+    "system": "System"
+  }
+
+}
