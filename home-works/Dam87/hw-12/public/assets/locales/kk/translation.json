@@ -1,0 +1,49 @@
+{
+  "app_name": "LOGO",
+  "navigation": {
+    "home": "Басты бет",
+    "users": "Пайдаланушылар",
+    "about_us": "Біз туралы"
+  },
+
+  "pages": {
+    "home": {
+      "search_post": "Пост іздеу...",
+      "post_not_found": "Пост табылмады"
+    },
+    "users": {
+      "search_user": "Пайдаланушылар іздеу...",
+      "user_not_found": "Пайдаланушы табылмады",
+      "age": "Жас"
+  
+    },
+    "about_us": {
+      "description": "БІЗ ТУРАЛЫ БЕТ"
+    },
+    "post": {
+      "similar_posts": "Ұқсас посттар",
+      "comments_is_empty": "Пікірлер тізімі бос",
+      "error": {
+        "post_not_found": "Мұндай пост табылмады",
+        "back" : "Артқа"
+      }
+    }
+  },
+  
+  "loader": {
+    "loading": "Не нашел перевод))..."
+
+},
+"theme_switcher": {
+  "dark": "Қараңғы",
+  "light": "Жарық   ",
+  "system" : "Жүйелік "
+
+},
+
+"error":  {
+     "description": "Бет табылмады"
+    
+  }
+
+}

@@ -1,0 +1,11 @@
+{
+  "header": {
+    "logo_text": "ЛОГО"
+  },
+  "app_name": "ЛОГО",
+  "navigation": {
+    "home": "Главная",
+    "users": "Пользователи",
+    "about_us": "О нас"
+  }
+}
