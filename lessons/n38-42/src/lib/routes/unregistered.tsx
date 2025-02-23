@@ -1,30 +1,31 @@
-import Home from '@/pages/home.tsx';
 import { PATHS } from '@/utils/constants/paths.ts';
-import Error from '@/pages/error.tsx';
-import AboutUs from '@/pages/about-us.tsx';
-import Users from '@/pages/users.tsx';
-import PostId from '@/pages/post-id.tsx';
+import { lazy } from 'react';
+
+const HomePage = lazy(() => import('@/pages/home.tsx'));
+const AboutUsPage = lazy(() => import('@/pages/about-us.tsx'));
+const UsersPage = lazy(() => import('@/pages/users.tsx'));
+const PostIdPage = lazy(() => import('@/pages/post-id.tsx'));
+const ErrorPage = lazy(() => import('@/pages/error.tsx'));
 
 export const UNREGISTERED_ROUTES = [
   {
     path: '*',
-    page: <Error />,
+    page: <ErrorPage />,
   },
   {
     path: PATHS.HOME,
-    page: <Home />,
+    page: <HomePage />,
   },
   {
     path: PATHS.POST_ID(':postId'),
-    page: <PostId />,
+    page: <PostIdPage />,
   },
   {
     path: PATHS.ABOUT_US,
-    page: <AboutUs />,
+    page: <AboutUsPage />,
   },
   {
     path: PATHS.USERS,
-    page: <Users />,
+    page: <UsersPage />,
   },
-
 ] as const;
