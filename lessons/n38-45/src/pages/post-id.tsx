@@ -5,12 +5,20 @@ import { Button } from '@/components/ui/button.tsx';
 import AnotherPostsList from '@/components/lists/another-posts-list.tsx';
 import { Loader } from 'lucide-react';
 import CommentsList from '@/components/lists/comments-list.tsx';
+import { useEffect } from 'react';
 
 const PostId = () => {
   const navigate = useNavigate();
   const { postId } = useParams();
   const { data, isPending } = useGetPostById(`${postId}`);
 
+  useEffect(() => {
+    if (data) {
+      document.title = `Пост: ${data.title}`;
+    } else {
+      document.title = `Пост: Загрузка...`;
+    }
+  }, [data]);
   return (
     <div className='container mx-auto flex gap-4'>
       {isPending ? (

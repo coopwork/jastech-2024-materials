@@ -9,7 +9,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import useGetPosts from '@/utils/api/json-placeholder/hooks/use-get-posts.tsx';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { PaginationType, PostType } from '@/utils/types/post.type.ts';
-import { Input } from '@/components/ui/input.tsx';
+import { Input } from 'ui/input.tsx';
 
 const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -34,17 +34,21 @@ const Home = () => {
       );
     }
     setSearchParams({ page: '1', search });
+    if (search) {
+      document.title = `Посты по запросу ${search}`;
+    } else {
+      document.title = `Посты`;
+    }
   };
 
   useEffect(() => {
     if (data?.length) {
       setFilteredPosts(data);
     }
-    if (searchParams.get('search')) {
-      submitSearch({
-        target: { value: searchParams.get('search') || '' },
-      } as ChangeEvent<HTMLInputElement>);
-    }
+
+    submitSearch({
+      target: { value: searchParams.get('search') || '' },
+    } as ChangeEvent<HTMLInputElement>);
   }, [data]);
 
   useEffect(() => {
