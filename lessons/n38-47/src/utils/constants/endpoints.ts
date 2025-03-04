@@ -7,5 +7,8 @@ export const ENDPOINTS = {
       POST_BY_ID: (postId: string | number) => `/posts/${postId}`,
       USER_BY_ID: (userId: string | number) => `/users/${userId}`,
     },
+    POST: {
+      POSTS: '/posts',
+    },
   },
 } as const;

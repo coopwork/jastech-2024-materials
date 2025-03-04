@@ -10,6 +10,7 @@ import useGetPosts from '@/utils/api/json-placeholder/hooks/use-get-posts.tsx';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { PaginationType, PostType } from '@/utils/types/post.type.ts';
 import { Input } from 'ui/input.tsx';
+import CreatePostModal from '@/components/modals/create-post.modal.tsx';
 
 const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -87,12 +88,13 @@ const Home = () => {
 
   return (
     <div className='container mx-auto'>
-      <div className='my-5'>
+      <div className='my-5 flex items-center gap-2.5'>
         <Input
           onChange={submitSearch}
           defaultValue={searchParams.get('search') || ''}
           placeholder='Найти пост...'
         />
+        <CreatePostModal />
       </div>
 
       <PostsList
