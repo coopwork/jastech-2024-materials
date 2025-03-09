@@ -41,7 +41,6 @@ const Home = () => {
       document.title = `Посты`;
     }
   };
-
   useEffect(() => {
     if (data?.length) {
       setFilteredPosts(data);

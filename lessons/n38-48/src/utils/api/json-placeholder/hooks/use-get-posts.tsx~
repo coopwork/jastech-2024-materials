@@ -6,6 +6,7 @@ export default function useGetPosts() {
     queryKey: ['posts'],
     queryFn: getPosts,
     staleTime: 1000 * 60 * 10,
+    retry: 3,
   });
 
   return { data, isPending, isError };
