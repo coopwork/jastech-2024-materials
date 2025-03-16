@@ -1,0 +1,28 @@
+import {Input} from "@/components/ui/input.tsx";
+import {Button} from "@/components/ui/button.tsx";
+import {authAPI} from "@/utils/api/instance.ts";
+
+
+const SignIn = () => {
+	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+
+		const formData = new FormData(event.currentTarget);
+		const email = formData.get('email');
+		const password = formData.get('password');
+
+		const response = await authAPI.post('/login', {email, password});
+		if (response.data.token) {
+			localStorage.setItem('token', response.data.token);
+		}
+	}
+	return (
+			<form onSubmit={handleSubmit}>
+				<Input required name='email' type="email" placeholder="Email" />
+				<Input required name='password' type="password" placeholder="Password" />
+				<Button>Sign in</Button>
+			</form>
+	);
+};
+
+export default SignIn;

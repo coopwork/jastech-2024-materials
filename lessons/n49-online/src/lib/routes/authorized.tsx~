@@ -1,0 +1,12 @@
+import Home from "@/pages/home.tsx";
+
+export const AUTHORIZED = [
+	{
+		path: '*',
+		element: <Home/>
+	},
+	{
+		path: '/',
+		element: <Home/>
+	}
+] as const;
