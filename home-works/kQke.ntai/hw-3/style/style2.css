@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.card_2 {
+  background-color: #000000;
+  border-radius: 10px;
+  border: 1px solid #6b6a6a;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 0 10px 3px #1c1d1d;
+  margin: auto;
+  margin-top: 300px;
+}
+
+.card_2__header {
+  color: #c9c8c8;
+  margin: 20px;
+  font-size: 90%;
+  gap: 12px;
+  
+}
+
+.card_2__input {
+  margin: 20px;
+  color: #c9c8c8;
+  font-size: 90%;
+  padding-right: 14px;
+}
+
+.card_2__select {
+  margin: 20px;
+  color: #c9c8c8;
+  font-size: 90%;
+}
+
+.card_2__buttons {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_2__header p {
+  color: #858585;
+}
+.card_2__select select {
+  width: 100%;
+  border: 1px solid #6b6a6a;
+  background-color: #000000;
+  color: #c9c8c8;
+  height: 38px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.card_2__input input {
+  width: 100%;
+  border: 1px solid #6b6a6a;
+  background-color: #000000;
+  color: #c9c8c8;
+  height: 38px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.btn__outlined {
+  cursor: pointer;
+  background-color: #000000;
+  color: #c9c8c8;
+  border-radius: 5px;
+  border: 1px solid #6b6a6a;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+}
+
+.btn__filled{
+  cursor: pointer;
+  color: #c9c8c8;
+  border-radius: 5px;
+  border: 1px solid #6b6a6a;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background-color: #2e2e2e;
+  border: none;
+}
+
+.btn__filled:hover{
+  cursor: pointer;
+  background-color: #000000;
+  color: #c9c8c8;
+  border-radius: 5px;
+  border: 1px solid #6b6a6a;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  
+}
+.btn__outlined:hover{
+  cursor: pointer;
+  color: #c9c8c8;
+  border-radius: 5px;
+  border: 1px solid #2e2e2e;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  background-color: #2e2e2e;
+  
+}
