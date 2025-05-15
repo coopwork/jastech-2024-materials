@@ -1,0 +1,32 @@
+:root {
+    color-scheme: light dark;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background-color: var(--back-color);
+    background-image: var( --back-imege);
+    background-position: 50% 50%;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    margin-bottom: 650px;
+    margin-left: 1500px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid var(--back-color);
+   
+}
+
