@@ -1,0 +1,44 @@
+@import url(./shop-items.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-optical-sizing: auto;
+  font-size: large;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("bg.png");
+}
+
+.container {
+  max-width: 90vw;
+  padding-bottom: 50px;
+}
+
+.app{
+  text-align: center;
+  padding: 1rem;
+  font-size: 50px ;
+  font-weight: bold;
+}
+
+.sort{
+  display:flex;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: center;
+}
+
+.empty{
+width: 5%;
+
+}
+

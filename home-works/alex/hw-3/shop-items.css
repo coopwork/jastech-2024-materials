@@ -1,0 +1,40 @@
+.catalog {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   padding: 80px;
+}
+
+.catalog__item {
+   display: flex;
+   flex-direction: column;
+      width: 400px;
+   background: rgba(221, 38, 38, 0.1);
+   border-radius: 0.5rem;
+   padding: 10px;
+   box-shadow: 0 0 10px 3px #02061318;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.catalog__item:hover {
+   transform: translateX(-5px);
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+   font-size: 1.5rem;
+   color: rgb(14, 15, 15);
+}
+
+.card__price{
+   align-self: flex-end;
+   padding-top: .5rem;
+  
+}
+
+
+@media (max-width: 600px) {
+   .catalog {
+      grid-template-columns: 1fr;
+   }
+}
