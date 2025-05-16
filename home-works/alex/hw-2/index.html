@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="./style.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Local Storage</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="form-box">
+            <form>
+               <div class="form-group">
+                  <label for="identify">Введите ID</label>
+                  <input id="identify" type="number" placeholder="id" />
+               </div>
+   
+               <div class="form-group">
+                  <label for="first-name">Введите имя</label>
+                  <input id="first-name" type="text" placeholder="имя" />
+               </div>
+   
+               <div class="form-group">
+                  <label for="last-name">Введите фамилию</label>
+                  <input id="last-name" type="text" placeholder="фамилия" />
+               </div>
+   
+               <div class="form-group">
+                  <label for="e-mail">Введите e-mail</label>
+                  <input id="e-mail" type="email" placeholder="e-mail" />
+               </div>
+   
+               <div class="button-group">
+                  <button id="write">Записать</button>
+                  <button type="button" id="read">Получить</button>
+               </div>
+   
+               <div class="button-group center">
+                  <button id="clear">Очистить хранилище</button>
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <script src="./main.js"></script>
+   </body>
+</html>
