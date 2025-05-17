@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Play:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./styles/style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./styles/hystmodal.min.css">
+    
+   </head>
+   <body>
+      <div class="container">
+         <div class="app">
+            <h1>Домашняя работа</h1> <br>
+           
+<button data-hystmodal="#myModal" class="btn_add" id="add_user_btn">Добавить пользователя</button>
+<div class="hystmodal" id="myModal" aria-hidden="true">
+   <div class="hystmodal__wrap">
+       <div class="hystmodal__window" role="dialog" aria-modal="true">
+           <button data-hystclose class="hystmodal__close">Закрыть</button>
+           <form class="add_form" action="">
+           <div class="add_user">
+            <div class="add_user_container">
+            <h3>Добавить пользователя</h3>
+            <input class="add_input" type="text"  id="add_name" required placeholder="Имя">
+            <input class="add_input" type="text"  id="add_city" required placeholder="Город">
+            <input class="add_input" type="text"  id="add_company" required placeholder="Компания">
+            <input class="add_input" type="text"  id="add_website" required placeholder="Website">
+            <input class="add_input" type="email" name="" id="add_email"  required placeholder="E-mail">
+            <button type="button" class="btn_add" id="">Добавить</button>
+            <h6 id="info"></h6>
+         </div>
+           </div>
+         </form>
+       </div>
+   </div>
+</div>
+
+
+
+
+
+
+         </div>
+         <div class="list"></div>
+      </div>
+      <script src="./lib/hystModal-0.4/hystmodal.min.js"></script>
+      <script type="module" src="./js/main.js"></script>
+   </body>
+</html>
