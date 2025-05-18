@@ -1,0 +1,18 @@
+export function getAge(birthDate: string | Date):number | string {
+	const birthDateObj:Date = typeof  birthDate === 'string' ? new Date(birthDate) : birthDate;
+
+	if (isNaN(birthDateObj.getTime())){
+		throw new Error('Некорректная дата рождения')
+	}
+
+	const today:Date = new Date();
+	let age:number = today.getFullYear() - birthDateObj.getFullYear();
+	const monthDifference = today.getMonth() - birthDateObj.getMonth();
+	const dayDifference = today.getDate() - birthDateObj.getDate();
+
+	if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)){
+		age--;
+	}
+
+	return age;
+}
