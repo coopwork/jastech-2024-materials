@@ -1,0 +1,54 @@
+$black-light: #232323;
+$background-light: #ffdf8c;
+$gray-line-light: #555555;
+$orange-light: #ff8d3f;
+
+$black-dark: #f1f1f1;
+$background-dark: #080c14;
+$gray-line-dark: #868686;
+$orange-dark: #481bfc;
+
+$container-width: 90%;
+$duration: 0.15s;
+
+$black: $black-light;
+$background: $background-light;
+$gray-line: $gray-line-light;
+$orange: $orange-light;
+
+:root {
+  --shadow: rgba(0,0,0,0.28) ;
+  --background: #d5d6d2;
+  --langualge-text: #000;
+  --langualge-background: #f5f5f5;
+  --but-outline: #fff;
+  --cat-active: #fff;
+  --cat-black: #282828;
+  --cat-background: #f9f9f9;
+  --bg-selector: #e9e9e9;
+  --act-background: #cecece;
+  --h-background: #f5f5f5;
+  --w-background: #ffffff;
+  --black: #{$black-light};
+  --: #{$background-light};
+  --gray-line: #{$gray-line-light};
+  --orange: #{$orange-light};
+}
+
+[data-theme="dark"] {
+  --shadow: rgba(0, 0, 0, 0.671);
+  --langualge-text: #fff;
+  --langualge-background: #333;
+  --but-outline: #3a3a3a;
+  --cat-active: #282828;
+  --cat-black: #fff;
+  --cat-background: #282828;
+  --bg-selector: #4d4d4d;
+  --act-background: #8b8b8b;
+  --h-background: #333;
+  --w-background: #333;
+  --black: #{$black-dark};
+  --background: #{$background-dark};
+  --gray-line: #{$gray-line-dark};
+  --orange: #{$orange-dark};
+}
