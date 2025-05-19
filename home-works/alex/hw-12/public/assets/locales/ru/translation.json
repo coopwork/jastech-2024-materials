@@ -1,0 +1,48 @@
+{
+  "app_name": "ЛОГО",
+  "navigation": {
+    "home": "Главная",
+    "users": "Пользователи",
+    "about_us": "О нас"
+  },
+  "pages": {
+    "home": {
+      "search_post": "Найти пост...",
+      "post_not_found": "Пост не найден"
+    },
+    "users": {
+      "search_user": "Найти пользователя...",
+      "user_not_found": "Пользователь не найден",
+      "age": "Возраст"
+    },
+    "about_us": {
+      "description": "СТРАНИЦА О НАС"
+    },
+    "post": {
+      "similar_posts": "Похожие посты",
+      "comments_is_empty": "Список комментариев пуст",
+      "error": {
+        "post_not_found": "Такой пост не найден",
+        "back" : "Назад"
+      }
+    }
+  },
+  
+  "loader": {
+    "loading": "Загрузка..."
+
+},
+"theme_switcher": {
+  "dark": "Темная",
+  "light": "Светлая",
+  "system" : "Системная"
+
+},
+
+"error":  {
+     "description": "Страница не найдена"
+    
+  }
+
+  
+}
