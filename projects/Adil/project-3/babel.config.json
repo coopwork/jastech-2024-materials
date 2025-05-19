@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", {  // Пресет для трансформации современного JS в старые версии
+        "targets": {
+          "chrome": "58"  // Код будет совместим с Chrome 58 и выше
+        },
+        "corejs": "3.0.0",  // Используется CoreJS 3 для полифилов
+        "useBuiltIns": "usage"  // Добавляет только те полифилы, которые нужны
+      }
+    ],
+    "@babel/preset-typescript",  // Поддержка TypeScript
+    "@babel/preset-react"  // Поддержка JSX для React
+  ],
+  "plugins": ["babel-plugin-styled-components"]  // Улучшенная работа styled-components (оптимизация, именование классов)
+}

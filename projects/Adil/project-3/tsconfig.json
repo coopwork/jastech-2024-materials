@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "esnext",  // Определяет версию ECMAScript, в которую будет транслироваться TypeScript-код
+    "module": "commonjs",  // Используется система модулей CommonJS (подходит для Node.js)
+    "lib": ["ES6", "DOM"],  // Подключает библиотеки ES6 и DOM (нужны для работы с браузером)
+
+    "allowJs": true,  // Разрешает компилятору работать с файлами JavaScript
+    "checkJs": true,  // Включает проверку типов в JS-файлах
+
+    "jsx": "react",  // Определяет формат JSX для работы с React
+    "rootDir": "src",  // Определяет корневую папку с исходниками
+
+    "removeComments": true,  // Удаляет комментарии в итоговом коде
+    "importHelpers": true,  // Оптимизирует дублирующийся код при помощи tslib
+    "downlevelIteration": true,  // Позволяет использовать итераторы в ES5/ES3
+
+    "strict": true,  // Включает строгий режим TypeScript (рекомендуется)
+    "noImplicitAny": true,  // Запрещает использование неявного `any`
+    "strictNullChecks": true,  // Требует явной проверки `null` и `undefined`
+    "noImplicitThis": true,  // Запрещает неявное использование `this`
+    "alwaysStrict": true,  // Всегда включает строгий режим (`"use strict"`)
+
+    "noUnusedLocals": true,  // Запрещает неиспользуемые локальные переменные
+    "noUnusedParameters": true,  // Запрещает неиспользуемые параметры функций
+    "noImplicitReturns": true,  // Обязывает указывать `return` в функциях
+    "noFallthroughCasesInSwitch": true,  // Запрещает автоматическое выполнение следующего `case` в `switch`
+
+    "moduleResolution": "node",  // Использует Node.js-алгоритм для поиска модулей
+    "allowSyntheticDefaultImports": true,  // Позволяет импортировать модули без `default`-экспорта
+    "declaration": true,  // Генерирует `.d.ts` файлы (полезно для создания библиотек)
+    "isolatedModules": true,  // Гарантирует, что каждый файл компилируется отдельно (нужно для `babel`)
+    "noEmit": true,  // Запрещает генерацию `.js` файлов (TypeScript только проверяет код)
+    "esModuleInterop": true,  // Позволяет использовать CommonJS и ES-модули вместе
+
+    "baseUrl": ".",  // Базовая директория для `paths`
+    "paths": {  
+        "*": ["node_modules", "src/*"]  // Позволяет использовать короткие пути для импортов
+    }          
+  },
+  "include": ["src/**/*"],  // Включает в компиляцию все файлы из `src`
+  "exclude": ["node_modules", "**/*.spec.ts", "*/*.test.ts"]  // Исключает тестовые файлы и `node_modules`
+}
