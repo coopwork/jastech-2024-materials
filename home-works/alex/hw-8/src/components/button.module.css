@@ -1,0 +1,35 @@
+.myButton{
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color:rgb(72, 37, 199);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 120px;
+  height: 40px;
+}
+.myButton:disabled{
+  opacity: 0.75;
+}
+.myButton:hover{
+  background-color:rgb(35, 14, 109);
+}
+.buttonLoader{
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ffffff61;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(360deg);
+  }
+}
