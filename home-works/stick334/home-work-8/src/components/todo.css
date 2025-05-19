@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: .2rem;
+    height: 10rem;
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+
+.todo_Id{
+    font-size: smaller;
+}
+.todo_text{
+    margin-top: 1rem;
+    font-size: x-large;
+    text-wrap: balance ;
+}
+.todo_add{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
