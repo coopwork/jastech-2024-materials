@@ -1,0 +1,129 @@
+.commision {
+  padding: 0 150px;
+
+  .commision__text {
+    font-weight: 400;
+    font-size: 50px;
+    color: #1760a4;
+    padding-bottom: 50px;
+  }
+
+  .commision__wrap {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    user-select: none;
+  }
+
+  .commision__people {
+    display: flex;
+    gap: 40px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .commision__person {
+      flex: 0 0 auto;
+      border: 1px solid #72727230;
+      border-radius: 24px;
+      width: 450px;
+      padding: 30px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .commision__person__img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+
+      .commision__person__role {
+        color: #727272;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .commision__person__name {
+        color: #1760a4;
+        font-size: 32px;
+        font-weight: 400;
+      }
+
+      .commision__person__text {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .commision__person__btn {
+        color: #ebc271;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .commision__controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    .slider-btn {
+      background-color: #1760a4;
+      color: white;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 2px 4px 2px;
+      transition: background 0.3s, transform 0.2s;
+
+      &:hover {
+        background-color: #134d82;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .commision {
+    display: block;
+    padding: 20px 30px;
+    width: 100% !important;
+    overflow-y: hidden;
+
+    .commision__person {
+      width: 350px !important;
+    }
+
+    .commision__text {
+      font-size: 32px !important;
+      padding: 0 !important;
+      text-align: center;
+      margin-bottom: 40px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .commision {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,180 @@
+body {
+  padding: 30px 150px;
+  overflow-x: hidden;
+  margin-top: 100px;
+}
+
+* {
+  font-family: "Geologica";
+}
+
+.navigation {
+  margin: 20px 0 0 0;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+
+  .navigation_main {
+    color: #1760a4;
+  }
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar_links {
+  color: black;
+}
+
+.wrapper {
+  display: grid;
+  gap: 50px;
+  margin: 20px auto;
+
+  .text {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1760a4;
+    text-align: center;
+  }
+
+  .form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    padding: 30px;
+
+    .form_text {
+      font-size: 24px;
+      color: #1760a4;
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 20px;
+
+      .checkbox_title {
+        color: #949494;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+
+    .checkbox input {
+      width: initial;
+      display: flex;
+      gap: 20px;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 8px;
+      padding: 10px;
+      outline: none;
+      border: 1px solid #1760a4;
+    }
+
+    .sign_btn {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .warning {
+        color: red;
+      }
+    }
+
+    .sign_btn button {
+      background: #000;
+      color: white;
+      padding: 10px 50px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .send_btn {
+      background: #1760a4;
+      color: white;
+      width: 100%;
+      padding: 10px 50px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 300;
+      border: none;
+    }
+
+    .form_input {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .form_input_two {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .label {
+      font-size: 18px;
+      color: #1760a4;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 20px 30px;
+  }
+
+  .wrapper {
+    gap: 20px;
+    .text {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .wrapper {
+    gap: 10px;
+    .text {
+      font-size: 16px;
+    }
+
+    .form {
+      padding: 10px;
+      gap: 10px;
+
+      .form_text {
+        font-size: 16px;
+      }
+
+      .checkbox {
+        .checkbox_title {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

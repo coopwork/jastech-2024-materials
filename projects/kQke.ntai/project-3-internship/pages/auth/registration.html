@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/css/registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="../../public/images/logo_header.png"
+        alt="Логотип"
+      />
+      <div class="title">Кабинет</div>
+      <a href="../../pages/main/index.html" class="site-button"
+        >Выйти на сайт</a
+      >
+    </header>
+
+    <main class="card">
+      <form class="registration-form">
+        <p class="paragraph">Регистрация</p>
+        <p class="info">ИИН/БИН</p>
+        <input type="text" placeholder="Введите ИИН/БИН" required />
+        <p class="info">Email</p>
+        <input type="email" placeholder="Укажите вашу почту" required />
+        <p class="info">Номер телефона</p>
+        <input type="tel" placeholder="Укажите номер телефона" required />
+        <p class="info">Пароль</p>
+        <div class="password-wrapper">
+          <input
+            type="password"
+            id="password"
+            placeholder="Придумайте пароль"
+            required
+          />
+          <span class="toggle-password" data-target="password">
+            <i class="bi bi-eye"></i>
+          </span>
+        </div>
+
+        <p class="info">Подтверждение пароля</p>
+        <div class="password-wrapper">
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Подтвердите пароль"
+            required
+          />
+          <span class="toggle-password" data-target="confirm-password">
+            <i class="bi bi-eye"></i>
+          </span>
+        </div>
+
+        <p class="more">
+          Регистрируясь, вы принимаете
+          <a href="#" target="_blank" class="link"
+            >условия политики конфиденциальности</a
+          >
+          и
+          <a href="#" target="_blank" class="link"
+            >пользовательского соглашения</a
+          >.
+        </p>
+        <button type="submit">Зарегистрироваться</button>
+        <p class="ask">
+          Вы уже зарегистрированы?<a
+            href="../../pages/auth/authorization.html"
+            target="_blank"
+            class="link"
+          >
+            Войдите</a
+          >
+          в свой аккаунт или воспользуйтесь соцсетями
+        </p>
+      </form>
+    </main>
+
+    <script src="../../public/js/registration.js"></script>
+  </body>
+</html>

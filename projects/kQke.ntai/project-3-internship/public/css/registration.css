@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  align-items: center;
+  padding: 0;
+  background-color: #f8f8fa;
+  font-family: "Geologica", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.site-button {
+  text-decoration: none;
+  color: #262b39;
+  font-family: Geologica;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1px solid #e7e7e7;
+  border-radius: 24px;
+  line-height: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.site-button:hover {
+  background-color: rgba(235, 194, 113, 1);
+}
+
+p {
+  font-family: Geologica;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.img {
+  height: 38px;
+  width: 48px;
+  padding-right: 60px;
+  padding-left: 1rem;
+}
+
+.btn {
+  margin-right: 1rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  background-color: white;
+  border: rgb(214, 213, 213) solid 1px;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: Geologica;
+  font-size: 14px;
+  line-height: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(235, 194, 113, 1);
+}
+
+.card {
+  background-color: white;
+  height: auto;
+  width: 444px;
+  border-radius: 8px;
+  margin: 7rem auto;
+}
+
+.paragraph {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.registration-form {
+  display: grid;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.info {
+  font-size: 16px;
+  color: #262b39;
+  margin: 0;
+  line-height: 20px;
+  padding-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  margin-bottom: 20px;
+  padding: 0.7rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 0.4rem;
+  font-size: 16px;
+  outline: none;
+  font-family: Geologica;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+button[type="submit"] {
+  padding: 0.9rem;
+  background-color: #1760a4;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #05427a;
+}
+.ask {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #737373;
+  margin: 0;
+  padding-top: 32px;
+  margin-bottom: 1.8rem;
+}
+.more {
+  font-size: 13px;
+  color: #737373;
+  line-height: 18px;
+  margin: 0;
+  padding-bottom: 32px;
+}
+.link {
+  color: #1760a4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.title {
+  line-height: 18px;
+  font-family: Geologica;
+  font-size: 24px;
+}
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding: 0.7rem;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  border-radius: 0.4rem;
+  font-size: 16px;
+  outline: none;
+  font-family: Geologica;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #737373;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 18px;
+}
+
+.toggle-password:hover {
+  color: #1760a4;
+  transition: color 0.3s ease;
+}
+
+.header {
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 144px);
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 24px;
+}
+
+.logo {
+  height: 38px;
+  width: 48px;
+  padding-right: 60px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 30px 50px;
+  }
+
+  .header {
+    padding: 10px 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 20px 30px;
+  }
+
+  .header {
+    padding: 0 30px;
+  }
+
+  .paragraph {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .registration-form {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  button[type="submit"] {
+    width: initial;
+  }
+
+  .card {
+    padding: 0 20px;
+    width: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .header {
+    width: 100vw;
+    padding: 0;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    margin: 0;
+  }
+}

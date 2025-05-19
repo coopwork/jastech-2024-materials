@@ -1,0 +1,195 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 50px 150px;
+}
+
+.wrapper_map {
+  width: 100%;
+  padding: 0 100px;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+}
+
+.kz svg {
+  width: 100%;
+  height: 100%;
+}
+
+.map-content {
+  gap: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  gap: 5px;
+  top: 100px;
+  right: 100px;
+  background: #fff;
+  border: 4px solid #ebc271;
+  border-radius: 14px;
+  padding: 25px;
+  width: 350px;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.region:hover + .tooltip,
+.tooltip:hover {
+  opacity: 1;
+}
+
+.tooltip-arrow,
+.tooltip-title,
+.tooltip-subtitle,
+.tooltip-event,
+.tooltip-date {
+  display: none;
+}
+
+.city-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tooltip-city {
+  font-weight: 500;
+  font-size: 12;
+}
+
+.tooltip-role {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.tooltip-name {
+  color: #1760a4;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.tooltip-content {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.region {
+  fill: #e1cdaa;
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: fill 0.3s ease-in-out;
+}
+.numbers {
+  padding: 0 150px;
+}
+
+.region:hover {
+  fill: #1760a4;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 42px;
+  color: #1760a4;
+}
+
+.btn-map {
+  width: 250px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ebc271;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 8px;
+  border: 2px solid #ebc271;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2.5rem;
+}
+
+.btn-map:hover {
+  background: #ebc271;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 20px 30px;
+  }
+
+  .wrapper_map {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .text {
+      position: initial;
+      font-size: 28px;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .map-content {
+      gap: 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wrapper_map {
+      justify-content: center;
+    }
+
+    .btn-map {
+      width: 100%;
+      position: initial;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tooltip {
+      top: -70px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 350px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .numbers {
+    padding: 0 50px;
+  }
+  .wrapper {
+    padding: 20px;
+
+    .tooltip {
+      width: 300px;
+
+      overflow: hidden;
+    }
+  }
+}

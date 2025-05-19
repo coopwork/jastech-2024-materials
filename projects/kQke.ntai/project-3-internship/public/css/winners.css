@@ -1,0 +1,206 @@
+body {
+  font-family: "Geologica";
+  overflow-x: hidden;
+  margin-top: 100px;
+}
+
+.wrap {
+  padding: 30px 150px;
+}
+
+.navbar_links {
+  color: black;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  margin: 20px 0 0 0;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+
+  .navigation_main {
+    color: #1760a4;
+  }
+}
+
+.main div {
+  margin: 25px 0;
+  font-weight: 500;
+  font-size: 48px;
+  color: #1760a4;
+}
+
+.years {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  gap: 10px;
+  align-items: center;
+}
+
+.years a {
+  border-radius: 15px;
+  border: 1px solid #000000;
+  padding: 4px 15px;
+  gap: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.years a:hover {
+  background-color: black;
+  color: white;
+}
+
+.information-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 200px;
+  flex-direction: row;
+  overflow-x: auto;
+  max-width: 100%;
+  user-select: none;
+}
+
+.information {
+  flex-shrink: 0;
+  width: 600px;
+  border-radius: 27px;
+  background-color: #f3f3f7;
+  padding: 50px;
+  display: grid;
+  gap: 20px;
+}
+
+.p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1d1d1e;
+}
+
+.words {
+  font-weight: 500;
+  font-size: 24px;
+  display: grid;
+  gap: 5px;
+  color: #1760a4;
+}
+
+.best {
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.best_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1760a4;
+}
+
+.TOO span {
+  color: #0b2136;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    padding: 30px 50px;
+  }
+
+  .information-container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 20px 30px;
+  }
+  .main p {
+    font-size: 36px;
+  }
+  .words {
+    font-size: 20px;
+    line-height: 60px;
+  }
+  .information {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .information-container {
+    padding: 0 30px;
+  }
+
+  .years {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 5px 0;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+
+    .years a {
+      flex-shrink: 0;
+    }
+  }
+
+  .information {
+    width: 80%;
+    gap: 20px;
+
+    .best {
+      display: grid;
+      gap: 10px;
+    }
+
+    .best_title {
+      font-size: 16px;
+      line-height: normal;
+    }
+
+    .TOO {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .words {
+      display: grid;
+      gap: 10px;
+      line-height: normal;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 20px;
+  }
+
+  .information-container {
+    padding: 0 20px;
+  }
+
+  .main div {
+    font-size: 32px;
+  }
+}

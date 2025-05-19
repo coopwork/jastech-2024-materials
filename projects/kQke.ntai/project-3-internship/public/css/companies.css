@@ -1,0 +1,63 @@
+.companies {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.companies__gallery {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.companies__card {
+  flex-shrink: 0;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.companies__card img {
+  width: 100%;
+}
+
+.companies__left {
+  cursor: pointer;
+}
+.companies__right {
+  cursor: pointer;
+}
+
+.companies__wrap {
+  overflow: hidden;
+  width: 74%;
+}
+
+@media (max-width: 1024px) {
+  .companies__left {
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+  }
+  .companies__right {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+  }
+
+  .companies__card {
+    width: 270px;
+  }
+}
