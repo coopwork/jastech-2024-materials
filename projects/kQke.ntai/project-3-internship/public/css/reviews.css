@@ -1,0 +1,129 @@
+.reviews {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.reviews__gallery {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 calc((100vw - 800px) / 2);
+  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+}
+
+.reviews__title {
+  padding: 50px 150px;
+  font-size: 50px;
+  color: #1760a4;
+  width: 100vh;
+}
+
+.reviews__card {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 800px;
+  flex-shrink: 0;
+}
+
+.reviews__card__img img {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.reviews__card__content__name {
+  font-size: 25px;
+}
+
+.reviews__card__content {
+  display: grid;
+  gap: 5px;
+}
+
+.reviews__gallery__btns {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  bottom: 200px;
+}
+
+.reviews__gallery__btn__left {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reviews__gallery__btn__right {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .reviews {
+    display: grid;
+    height: 52vh;
+  }
+
+  .reviews__gallery {
+    gap: 10px;
+    width: 100%;
+    background: white !important;
+    padding: 0 20px;
+  }
+
+  .reviews__card {
+    width: 350px;
+    display: block;
+  }
+
+  .reviews__card__content__text {
+    display: --webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews__title {
+    width: 100vw;
+    padding: 10px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .reviews__gallery__btn__left {
+    left: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reviews__gallery__btn__right {
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reviews__gallery__btns {
+    bottom: 20px;
+  }
+}

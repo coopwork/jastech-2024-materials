@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  align-items: center;
+  padding: 0;
+  background-color: #fbfbff;
+  font-family: "Geologica";
+}
+
+a {
+  text-decoration: none;
+  color: inital;
+}
+
+.header {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+}
+
+.logo {
+  height: 38px;
+  width: 48px;
+  padding-right: 60px;
+}
+
+p {
+  font-family: Geologica;
+  font-size: 24px;
+}
+
+.img {
+  height: 38px;
+  width: 48px;
+  padding-right: 60px;
+  padding-left: 1rem;
+}
+
+.btn {
+  margin-right: 1rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  background-color: white;
+  border: rgb(214, 213, 213) solid 1px;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: Geologica;
+  font-size: 14px;
+  line-height: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(235, 194, 113, 1);
+}
+
+.main {
+  background-color: #f8f8fa;
+  min-height: 70vh;
+  margin: 2rem 100px;
+  border-radius: 12px;
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.profile {
+  width: 274px;
+  height: 130px;
+  border-radius: 8px;
+  justify-content: space-between;
+  margin: 2rem 1.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1,
+.btn2 {
+  width: 214px;
+  height: 44px;
+  border-radius: 8px;
+  padding: 12px 20px 12px 20px;
+  gap: 12px;
+  background-color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.btn1:hover {
+  background-color: #ecf4ff;
+}
+
+.btn1 span,
+.btn2 span {
+  text-decoration: none;
+  font-family: Geologica;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1760a4;
+}
+
+.btn2:hover {
+  background-color: #ecf4ff;
+}
+
+.home {
+  width: 18px;
+  height: 18px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.barTitle {
+  font-family: Geologica;
+  font-size: 32px;
+  line-height: 36px;
+  color: #1760a4;
+}
+.stats {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ecf4ff;
+  color: #17488b;
+  overflow-x: auto;
+}
+
+.stats-over {
+  overflow-x: auto;
+}
+
+.stats th {
+  border-bottom: 1px solid #17488b;
+  text-align: start;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.stats td {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+
+  text-align: start;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Geologica;
+}
+.stats th {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: Geologica;
+}
+.stats tbody tr:nth-child(odd) {
+  background-color: white;
+  color: #17488b;
+}
+
+.stats tbody tr:nth-child(even) {
+  background-color: #ecf4ff;
+  color: #17488b;
+}
+
+a {
+  color: #17488b;
+}
+
+#contestTableContainer,
+#profileForm {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 30px 50px;
+  }
+
+  .profile {
+    width: 100%;
+    flex-direction: row;
+    height: 50px;
+
+    margin: 0;
+  }
+
+  .header {
+    margin: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .header {
+    top: 0;
+    width: 100%;
+    padding: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
+  }
+
+  .main {
+    margin: 50px 0;
+    padding: 10px;
+    overflow: hidden;
+  }
+}

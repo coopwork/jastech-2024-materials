@@ -1,0 +1,104 @@
+body {
+  font-family: "Geologica";
+}
+
+.navbar_links {
+  color: black;
+}
+
+.wrapper {
+  padding: 0 150px;
+
+  .navigation {
+    margin: 20px 0 0 0;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+
+    .navigation_main {
+      color: #1760a4;
+    }
+  }
+
+  .content {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .content_image img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      object-position: top;
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+    .content_text {
+      margin: 20px 0;
+
+      .content_title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1760a4;
+        padding: 0 0 10px 0;
+      }
+
+      .content_description {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 50px;
+
+    .content {
+      .content_image img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 50px 20px;
+
+    .content {
+      .content_image img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        float: none;
+        margin: 0;
+      }
+
+      .content_text {
+        margin: 20px 0;
+
+        .content_title {
+          font-size: 32px;
+          font-weight: 500;
+          color: #1760a4;
+        }
+      }
+    }
+  }
+}

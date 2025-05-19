@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../public/css/auth.css" />
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="../../public/images/logo_header.png"
+        alt="Логотип"
+      />
+      <div class="title">Кабинет</div>
+      <a href="../../pages/main/index.html" class="site-button"
+        >Выйти на сайт</a
+      >
+    </header>
+
+    <main class="card">
+      <form class="registration-form">
+        <p class="paragraph">Авторизация</p>
+        <span class="names">
+          <a class="part" href="">Участника</a>
+          <a class="part" href="">Эксперта</a>
+        </span>
+        <p for="text">ИИН/БИН</p>
+        <div class="iin-bin">
+          <input type="text" placeholder="Введите ИИН/БИН" required />
+        </div>
+
+        <p class="pass" for="password">Пароль</p>
+        <div class="hide">
+          <input
+            type="password"
+            placeholder="Введите Пароль"
+            id="password"
+            required
+          />
+          <span class="toggle-password" data-target="confirm-password">
+            <i class="bi bi-eye"></i>
+          </span>
+        </div>
+
+        <a href="#" target="_blank" class="more"> Забыли пароль?</a>
+        <button type="submit">Войти</button>
+        <p class="ask">
+          У вас нет аккаунта?<a
+            href="../../pages/auth/registration.html"
+            target="_blank"
+            class="link"
+          >
+            Зарегистрируйтесь</a
+          >
+          или воспользуйтесь соцсетями
+        </p>
+      </form>
+    </main>
+
+    <script src="../../public/js/auth.js"></script>
+  </body>
+</html>

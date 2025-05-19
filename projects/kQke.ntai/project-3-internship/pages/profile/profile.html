@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/css/profile_1.css" />
+    <link rel="stylesheet" href="../../public/css/profile_2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&display=swap"
+      rel="stylesheet"
+    />
+    <title>Профиль</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="../../public/images/logo_header.png"
+        alt="Логотип"
+      />
+      <div class="title">Кабинет</div>
+      <a href="../../pages/main/index.html" class="site-button"
+        >Выйти на сайт</a
+      >
+    </header>
+
+    <main class="main">
+      <div class="card">
+        <div class="profile">
+          <button class="btn1">
+            <img
+              src="../../public/images/icons navigation (1).png"
+              alt=""
+            /><span>Прием заявок</span>
+          </button>
+          <button class="btn2">
+            <img src="../../public/images/icons navigation.png" alt="" /><span
+              >Профиль</span
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="links" id="contestTableContainer" style="display: none">
+        <p class="barTitle">Прием заявок</p>
+        <div class="stats-over">
+          <table class="stats" id="contestTable">
+            <thead>
+              <tr>
+                <th>Конкурсы</th>
+                <th>Статус</th>
+                <th>Дата начала</th>
+                <th>Дата окончания</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="form-container" id="profileForm" style="display: none">
+        <p class="barTitle">Профиль</p>
+        <form>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Ваша фамилия</label>
+              <input type="text" placeholder="Илияс" />
+            </div>
+            <div class="form-group">
+              <label>Ваше имя</label>
+              <input type="text" placeholder="Илияс" />
+            </div>
+            <div class="form-group">
+              <label>Ваше отчество</label>
+              <input type="text" placeholder="" />
+            </div>
+            <div class="form-group">
+              <label>Дата рождения</label>
+              <input type="text" placeholder="30.10.1998" />
+            </div>
+            <div class="form-group">
+              <label>Номер телефона</label>
+              <input type="text" placeholder="+7 (952) 795-90-39" />
+            </div>
+            <div class="form-group">
+              <label>Место работы</label>
+              <input type="text" placeholder="" />
+            </div>
+            <div class="form-group email-group">
+              <label>Email</label>
+              <input type="email" placeholder="xovxmn@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label>Новый пароль</label>
+              <input type="password" placeholder="00" />
+            </div>
+            <div class="form-group">
+              <label>Подтверждение нового пароля:</label>
+              <input type="password" placeholder="" />
+            </div>
+          </div>
+          <button class="logout-btn">
+            Выйти<img src="../../public/images/log-out.png" alt="" />
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="../../public/js/profile.js"></script>
+    <script src="../../public/js/header_main.js"></script>
+  </body>
+</html>

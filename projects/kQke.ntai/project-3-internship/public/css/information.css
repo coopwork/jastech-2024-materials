@@ -1,0 +1,192 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 100px;
+  padding: 30px 150px;
+  font-family: "Geologica";
+  margin-top: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 30px 50px;
+  }
+}
+
+.navbar_links {
+  color: black;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  margin: 20px 0 0 0;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+
+  .navigation_main {
+    color: #1760a4;
+  }
+}
+
+.links {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .link:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  color: #1760a4;
+}
+
+.sub_title {
+  font-weight: 400;
+  font-size: 25px;
+  color: #1760a4;
+}
+
+.main_content {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.gools_images_item {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+  text-align: center;
+  gap: 20px;
+}
+.gools_images_item img {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+}
+
+.gools_images {
+  display: flex;
+  gap: 50px;
+}
+
+section {
+  margin: 0 0 100px 0;
+  display: grid;
+  gap: 20px;
+}
+
+.table {
+  display: grid;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.table_item {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.table_item_number {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1760a4;
+}
+
+.gools_part {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 20px 30px;
+  }
+
+  .gools_images {
+    line-height: normal !important;
+    display: block !important;
+  }
+
+  .gools_images_item {
+    display: none !important;
+  }
+
+  .title {
+    font-size: 28px !important;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .table_item {
+    width: normal !important;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 5px 0;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+
+    .link {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}

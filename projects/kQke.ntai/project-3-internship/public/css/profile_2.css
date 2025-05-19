@@ -1,0 +1,91 @@
+.form-container {
+  padding: 2rem;
+  background-color: #f8f8fa;
+  border-radius: 12px;
+}
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-family: Geologica;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  padding: 0.8rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-family: Geologica;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+  background-color: #ffffff;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn {
+  padding: 0.8rem 2rem;
+  border: 2px solid #f55651;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #ff4b4b;
+  font-family: Geologica;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+.logout-btn img {
+  width: 16px;
+  height: 16px;
+}
+.logout-btn:hover {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.email-group {
+  grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .form-grid {
+    display: block;
+    gap: 20px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+}
