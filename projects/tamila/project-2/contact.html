@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherMap</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/image/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/image/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/image/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/image/icon/site.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/image/logo.png" alt="Логотип" class="logo" />
+      <div class="header-brand">
+        <h1 class="brand-title">WeatherMap</h1>
+        <p class="brand-subtitle">By BugSquashers</p>
+      </div>
+      <nav class="nav">
+        <button class="mobile-menu-btn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link">Погода и Карта</a></li>
+          <li><a href="./exchange.html" class="nav-link">Курс Валют</a></li>
+          <li><a href="./news.html" class="nav-link">Новости</a></li>
+          <li><a href="#" class="nav-link">О разработчиках</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about-team" class="about-team-section">
+      <div class="container">
+        <h2 class="section-title">О команде BugSquashers</h2>
+        <p class="team-description">
+          Команда BugSquashers — это группа разработчиков, объединившихся для
+          создания инновационного веб-сайта, который позволяет пользователям
+          отслеживать погоду по всему миру, получать актуальную информацию о
+          валютных курсах и оставаться в курсе последних мировых новостей. Мы
+          используем передовые технологии, такие как HTML, CSS и JavaScript, а
+          также подключаем различные API для получения данных о погоде,
+          конвертации валют и новостях. Наша цель — предоставить пользователям
+          удобный и интуитивно понятный интерфейс для работы с информацией о
+          мире.
+        </p>
+      </div>
+    </section>
+
+    <div class="general-container">
+      <input class="radio" type="radio" name="card" id="cardUno" checked />
+      <label class="content" for="cardUno">
+        <h1 class="title-card">
+          <span class="marg-bott">Стяжкин Кирилл</span>
+          <span class="subtitle">Обзор проделанной работы:</span>
+        </h1>
+        <div class="additional-info">
+          <ul>
+            <li>Создание страницы с картой - <a href="https://yandex.ru/maps-api/docs" target="_blank">YandexMapApi v2</a></li>
+            <li>Создание элементов управление карты</li>
+            <li>Стилизация кнопок управление</li>
+          </ul>
+        </div>
+      </label>
+
+      <input class="radio" type="radio" name="card" id="cardDos" />
+      <label class="content" for="cardDos">
+        <h1 class="title-card">
+          <span class="marg-bott">Аздарова Нагима</span>
+          <span class="subtitle">Обзор проделанной работы:</span>
+        </h1>
+        <div class="additional-info">
+          <ul>
+            <li>Создание и добавление меток для городов на карту с использованием <a href="https://yandex.ru/dev/maps/" target="_blank">Yandex Maps API</a>.</li>
+            <li>Реализация запроса к <a href="https://openweathermap.org/api" target="_blank">OpenWeather API</a> для получения данных о текущей погоде и прогнозах, а также отображение этих данных в боковой панели.</li>
+            <li>Реализация фильтрации городов по масштабу карты и населению с использованием <a href="http://www.geonames.org/" target="_blank">GeoNames API</a> для получения списка городов в заданных координатах.</li>
+            <li>Завершение работы над проектом: улучшение структуры, исправление ошибок и оптимизация функционала.</li>
+          </ul>
+        </div>        
+      </label>
+
+      <input class="radio" type="radio" name="card" id="cardTres" />
+      <label class="content" for="cardTres">
+        <h1 class="title-card">
+          <span class="marg-bott">Ашкен Раухат</span>
+          <span class="subtitle">Обзор проделанной работы:</span>
+        </h1>
+        <div class="additional-info">
+          <ul>
+            <li>Структуризация проекта: организация папок и создание ключевых файлов.</li>
+            <li>Разработка страницы конвертации валют с использованием <a href="https://www.exchangerate-api.com/" target="_blank">ExchangeRateApi</a></li>
+            <li>Создание вкладки новостей о погоде с интеграцией данных из <a href="https://newsapi.org/" target="_blank">NewsApi</a></li>
+            <li>Реализация слайдера на основе примера с CodePen для вкладки "О разработчиках".</li>
+            <li>Добавление логотипа и иконки на сайт.</li>
+            <li>Обеспечение адаптивности сайта для мобильных устройств, включая создание бургер-меню.</li>
+          </ul>
+        </div>
+      </label>
+
+      <input class="radio" type="radio" name="card" id="cardCuatro" />
+      <label class="content" for="cardCuatro">
+        <h1 class="title-card">
+          <span class="marg-bott">Жабасова Тамила</span>
+          <span class="subtitle">Обзор проделанной работы:</span>
+        </h1>
+        <div class="additional-info">
+          <ul>
+            <li>Построение маршрутов сайта</li>
+            <li>Разработка структуры футера</li>
+            <li>Рандомизация элементов массива (цитат)</li>
+            <li>Стилизация элементов сайта</li>
+          </ul>
+        </div>
+      </label>
+    </div>
+
+    <footer class="footer">
+      <div id="random-phrase">
+          <div id="phrase">Загрузка...</div>
+          <div id="author">Загрузка...</div>
+      </div>
+      <button id="next-quote">Следующая цитата</button>
+      <div class="row">
+          <p> BugSquashers © 2025 Никакие права не защищены </p>
+          <a href="https://github.com/BugSquashersApp" target="_blank" class="github-link">
+          
+          </a>
+        </div>
+    </footer>
+  
+     <script src="./assets/js/random.phrase.js"></script>
+
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
