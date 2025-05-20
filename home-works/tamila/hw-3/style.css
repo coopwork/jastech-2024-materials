@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(https://uralcci.com/data/images/news/upload/137/65/13765.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+select, label {
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+}
+
+select:focus, label input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+label input {
+    margin-left: 8px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Уменьшено минимальное значение */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.catalog__item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog__item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.catalog__item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.catalog__item h3:hover {
+    color: #3498db;
+}
+
+.catalog__item small {
+    color: #777;
+    font-size: 14px;
+}
+
+.catalog__item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.catalog__item p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+select, label {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Улучшено для планшетов */
+    }
+    select, label {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    .catalog__item h3 {
+        font-size: 18px; /* Меньше заголовки для маленьких экранов */
+    }
+    .catalog__item p {
+        font-size: 14px; /* Уменьшены шрифты для мобильных */
+    }
+    .catalog__item p:first-of-type {
+        font-size: 16px;
+    }
+}

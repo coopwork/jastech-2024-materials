@@ -1,0 +1,90 @@
+/* Определяем переменные для светлой темы */
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #333;
+    --title-text-color-light: #333;
+    --date-text-color-light: #777;
+    --content-text-color-light: #444;
+    --card-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --error-text-color-light: red;
+}
+
+/* Темная тема */
+.dark {
+    --background-color-dark: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --title-text-color-dark: #ecf0f1;
+    --date-text-color-dark: #bdc3c7;
+    --content-text-color-dark: #ecf0f1;
+    --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --error-text-color-dark: #e74c3c;
+}
+
+/* Общий контейнер для поста */
+.post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-color-light); /* По умолчанию светлый фон */
+    box-shadow: var(--card-shadow-light); /* По умолчанию светлая тень */
+    border-radius: 8px;
+}
+
+/* Заголовок поста */
+.post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: var(--title-text-color-light); /* По умолчанию светлый цвет заголовка */
+}
+
+/* Дата публикации */
+.post-date {
+    font-size: 1rem;
+    color: var(--date-text-color-light); /* По умолчанию светлый цвет даты */
+    margin-bottom: 12px;
+}
+
+/* Тело текста поста */
+.post-content {
+    font-size: 1.125rem;
+    color: var(--content-text-color-light); /* По умолчанию светлый цвет контента */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Изображение поста */
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Стили для ошибки */
+.error-message {
+    color: var(--error-text-color-light); /* По умолчанию светлый цвет ошибки */
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Темная тема */
+.dark .post-container {
+    background-color: var(--background-color-dark); /* Темный фон для поста */
+    box-shadow: var(--card-shadow-dark); /* Темная тень */
+}
+
+.dark .post-title {
+    color: var(--title-text-color-dark); /* Темный цвет заголовка */
+}
+
+.dark .post-date {
+    color: var(--date-text-color-dark); /* Темный цвет даты */
+}
+
+.dark .post-content {
+    color: var(--content-text-color-dark); /* Темный цвет контента */
+}
+
+.dark .error-message {
+    color: var(--error-text-color-dark); /* Темный цвет ошибки */
+}
