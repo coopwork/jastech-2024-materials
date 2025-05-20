@@ -1,0 +1,36 @@
+/* Основной стиль для кнопки переключения темы */
+.theme-toggle {
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Эффект при наведении */
+.theme-toggle:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+/* Стиль для ссылки на главную страницу */
+.home-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Эффект при наведении на ссылку */
+.home-link:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}

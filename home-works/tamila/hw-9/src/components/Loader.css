@@ -1,0 +1,103 @@
+/* Определяем переменные для светлой темы */
+:root {
+    --card-background-color-light: #ffffff; /* Светлый фон для карты */
+    --card-text-color-light: #333333; /* Тёмный текст для светлой темы */
+    --card-border-light: #e0e0e0; /* Светлая граница */
+    --card-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1); /* Светлая тень */
+    --card-title-color-light: #3f51b5; /* Акцентный синий для заголовка */
+    --card-description-color-light: #757575; /* Сероватый цвет для описания */
+    --card-button-background-light: #1e88e5; /* Светлый акцентный синий */
+    --card-button-hover-background-light: #1565c0; /* Темнее при наведении для кнопки */
+}
+
+/* Темная тема */
+.dark {
+    --card-background-color-dark: #121212; /* Тёмный фон для карты */
+    --card-text-color-dark: #ffffff; /* Белый текст для темной темы */
+    --card-border-dark: #333333; /* Тёмная граница */
+    --card-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.4); /* Темная тень */
+    --card-title-color-dark: #90caf9; /* Голубой акцент для заголовка */
+    --card-description-color-dark: #b0bec5; /* Сероватый текст для описания */
+    --card-button-background-dark: #1e88e5; /* Тот же синий для кнопки */
+    --card-button-hover-background-dark: #1565c0; /* Темнее при наведении */
+}
+
+/* Основные стили для карточки */
+.card {
+    font-family: 'Montserrat', sans-serif; /* Устанавливаем шрифт */
+    background-color: var(--card-background-color-light); /* Светлый фон по умолчанию */
+    color: var(--card-text-color-light); /* Светлый текст по умолчанию */
+    border: 1px solid var(--card-border-light); /* Светлая граница */
+    border-radius: 12px; /* Скругление углов */
+    box-shadow: var(--card-shadow-light); /* Светлая тень по умолчанию */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Лёгкий подъём при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Более глубокая тень */
+}
+
+/* Контент карты */
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700; /* Полужирный стиль */
+    color: var(--card-title-color-light); /* Светлый цвет для заголовка */
+}
+
+.card-description {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 400; /* Обычный стиль */
+    color: var(--card-description-color-light); /* Светлый цвет для описания */
+}
+
+/* Кнопка */
+.card-actions {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-button {
+    background-color: var(--card-button-background-light); /* Светлый акцентный синий */
+    color: #ffffff; /* Белый текст */
+    text-transform: uppercase;
+    font-weight: 500; /* Полужирный стиль для кнопки */
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-family: 'Montserrat', sans-serif; /* Шрифт кнопки */
+}
+
+.card-button:hover {
+    background-color: var(--card-button-hover-background-light); /* Темнее при наведении */
+    transform: scale(1.05); /* Лёгкое увеличение */
+}
+
+/* Темная тема */
+.dark .card {
+    background-color: var(--card-background-color-dark); /* Тёмный фон для карточки */
+    color: var(--card-text-color-dark); /* Белый текст для темной темы */
+    border: 1px solid var(--card-border-dark); /* Тёмная граница */
+    box-shadow: var(--card-shadow-dark); /* Темная тень */
+}
+
+.dark .card-title {
+    color: var(--card-title-color-dark); /* Голубой акцент для заголовка */
+}
+
+.dark .card-description {
+    color: var(--card-description-color-dark); /* Сероватый текст для описания */
+}
+
+.dark .card-button {
+    background-color: var(--card-button-background-dark); /* Тот же акцентный синий для кнопки */
+}
+
+.dark .card-button:hover {
+    background-color: var(--card-button-hover-background-dark); /* Темнее при наведении */
+}
