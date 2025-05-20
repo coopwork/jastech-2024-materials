@@ -1,0 +1,22 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.slider_container {
+   margin: 20%;
+}
+
+.swiper {
+   width: 600px;
+   height: 300px;
+ }
+ 
