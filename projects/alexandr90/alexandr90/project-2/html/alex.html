@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Website</title>
+    <link rel="stylesheet" href="/css/alex.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="/pictures/news-logo.png" alt="logo" class="logo" />
+      </a>
+
+      <!-- <nav> -->
+      <nav data-opened="false" class="navigation">
+        <button class="burger_close">X</button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#sport-news">Sport News</a></li>
+        </ul>
+      </nav>
+      <button class="burger_open">&#8801;</button>
+    </header>
+
+    <section class="section">
+      <div class="news" id="sport-news">
+        <div class="title">
+          <h3>
+            <a href="#">Sport News</a>
+          </h3>
+        </div>
+        <div class="news-block">
+          <div class="news-img"></div>
+        </div>
+      </div>
+
+      <!-- <div class="line"></div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <h4 class="footer__title">Location</h4>
+            <address class="footer__address">
+              <div>Kazakhstan</div>
+              <div>Kokshetau city Akana-Sere 100</div>
+            </address>
+          </div>
+
+          <div class="footer__block">
+            <h4 class="footer__title">share with love</h4>
+            <div class="social social--footer">
+              <a
+                class="social__item"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img src="/pictures/facebook1.svg" height="25" alt="" />
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="/pictures/twitter1.svg" height="25" alt="" />
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="/pictures/vk1.svg" height="25" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__block">
+            <h4 class="footer__title">Sport news page</h4>
+            <div class="footer__text">
+              <p>
+                “Movement is life, and life is movement” Ancient Greek
+                philosopher Aristotle It is known that people who lead a
+                sedentary lifestyle are more likely to get sick and, on average,
+                live less than those who are active and play sports.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /.footer__inner -->
+      </div>
+      <!-- /.container -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright__text">
+            <span>2025 &copy; Sport News Page</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/alex.js"></script>
+  </body>
+</html>

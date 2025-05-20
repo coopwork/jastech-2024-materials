@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Электронная очередь университета</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Электронная очередь университета</h1>
+
+      <div class="form-group">
+        <label for="institute">Выберите институт:</label>
+        <select id="institute" onchange="updateServices()">
+          <option value="">-- Выберите институт --</option>
+          <option value="agro">Агротехнический институт</option>
+          <option value="pedagogical">Педагогический институт</option>
+          <option value="business-law">Высшая школа бизнеса и права</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Выберите услугу:</label>
+        <select id="service" onchange="updateSubjects()" disabled>
+          <option value="">-- Сначала выберите институт --</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Выберите предмет:</label>
+        <select id="subject" disabled>
+          <option value="">-- Сначала выберите услугу --</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="datetime">Выберите время:</label>
+        <input type="datetime-local" id="datetime" required />
+      </div>
+
+      <button onclick="addToQueue()">Записаться в очередь</button>
+      <button onclick="openQueueWindow()">Текущая очередь</button>
+      <button onclick="openAllCalledQueueWindow()">
+        Общая очередь вызванных
+      </button>
+    </div>
+
+    <!-- Модальное окно подтверждения -->
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <h2>Ваша запись подтверждена!</h2>
+        <p>Номер в очереди: <span id="queueNumber"></span></p>
+        <p>Услуга: <span id="serviceInfo"></span></p>
+        <p>Предмет: <span id="subjectInfo"></span></p>
+        <p>Время: <span id="scheduledTime"></span></p>
+        <button onclick="closeModal()">ОК</button>
+      </div>
+    </div>
+
+    <!-- Окно текущей очереди -->
+    <div id="queueWindow" class="modal">
+      <div class="modal-content">
+        <h2>Окно текущей очереди</h2>
+        <div id="currentQueueList"></div>
+        <button onclick="closeQueueWindow()">Закрыть</button>
+      </div>
+    </div>
+
+    <!-- Окно общей очереди вызванных -->
+    <div id="allCalledQueueWindow" class="modal">
+      <div class="modal-content">
+        <h2>Общая очередь вызванных</h2>
+        <div id="allCalledQueueList"></div>
+        <button onclick="closeAllCalledQueueWindow()">Закрыть</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
