@@ -1,0 +1,221 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5f9d4f264d98d40bf411913db1.avif",
+    "title": "Пепперони фреш",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 4800,
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5f6df65f019bf69e6d8b69551f.avif",
+    "title": "Ветчина и сыр",
+    "types": [
+      0
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 1500,
+    "category": 1,
+    "rating": 6
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5fabaed8998cac0985bfb698fa.avif",
+    "title": "Двойной цыпленок",
+    "types": [
+      0
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 1700,
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5fbd0756a6aaa0bbeba01b343a.avif",
+    "title": "Чоризо фреш",
+    "types": [
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 1600,
+    "category": 4,
+    "rating": 2
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/0194023637ef7901a38392b7e4519485.avif",
+    "title": "Креветки со сладким чили",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 2500,
+    "category": 5,
+    "rating": 8
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/019407884efc75d3ace879276729d644.avif",
+    "title": "Аррива!",
+    "types": [
+      0
+    ],
+    "sizes": [
+      30,
+      40
+    ],
+    "price": 3400,
+    "category": 4,
+    "rating": 2
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5f84d55746a7eeef68cd89c1b1.avif",
+    "title": "Сырный цыпленок",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 4000,
+    "category": 1,
+    "rating": 9
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5fd6097096b601585d57f44a6f.avif",
+    "title": "Жюльен с грибами",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 2700,
+    "category": 2,
+    "rating": 10
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5f92dfcd9e84600c4dd6b916d4.avif",
+    "title": "Четыре сезона",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 2300,
+    "category": 4,
+    "rating": 10
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://media.dodostatic.net/image/r:233x233/11ee7d5f7dfcc07695bbb44734525217.avif",
+    "title": "Маргарита",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 1700,
+    "category": 2,
+    "rating": 7
+  },
+ 
+  {
+    "id": 10,
+    "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee7d5fae66f66fb17f012989d718f0.avif",
+    "title": "Колбаски Барбекю ", 
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],    
+
+    "price": 2500,  
+
+    "category": 3,
+    "rating": 8   
+  },
+
+  {
+    "id": 11,
+    "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee7d5f909b2fc398eecbb0442c3c8f.avif", 
+    "title": "Цыпленок барбекю ",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 2900,  
+    "category": 3,
+    "rating": 9
+  },
+  {
+    "id": 12,
+    "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee7d5fb110d0f0971c366c3fc0080a.avif",
+    "title": "Диабло",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 3200,
+    "category": 4,
+    "rating": 10
+  
+  }
+]

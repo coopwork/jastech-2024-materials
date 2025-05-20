@@ -1,0 +1,39 @@
+@import '../variables';
+
+.categories {
+    ul {
+        display: flex;
+        padding: 10px;
+        li {
+            background-color: var(--cat-background);
+            padding: 13px 30px;
+            border-radius: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            @include noselect();
+
+            &:hover {
+                background-color: rgba(var(--gray-line), 0.9);
+                transform: scale(1.05);
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            &:active {
+                background-color: rgba(var(--gray-line), 0.8);
+                transform: scale(0.95);
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            &.active {
+                background-color: var(--cat-black);
+                color: var(--cat-active);
+                transform: scale(1.1);
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+                transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            }
+        }
+    }
+}
