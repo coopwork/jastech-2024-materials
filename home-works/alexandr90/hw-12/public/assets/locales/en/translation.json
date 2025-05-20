@@ -1,0 +1,50 @@
+{
+  "app_name": "LOGO",
+  "navigation": {
+    "home": "Home",
+    "users": "Users",
+    "about_us": "About us"
+  },
+
+  "pages": {
+    "home": {
+      "search_post": "Find post...",
+      "post_not_found": "Post not found"
+    },
+    "users": {
+      "search_user": "Find user...",
+      "user_not_found": "User not found",
+      "age": "Age"
+    },
+    "about_us": {
+      "description": "ABOUT US PAGE"
+    },
+    "post": {
+      "similar_posts": "Similar posts",
+      "comments_is_empty": "Comment list is empty",
+      "error": {
+        "post_not_found": "No such post found",
+        "back" : "Back"
+      }
+    }
+  },
+  
+  "loader": {
+    "loading": "Loading..."
+
+},
+"theme_switcher": {
+  "dark": "Dark",
+  "light": "Light",
+  "system" : "System"
+
+},
+
+"error":  {
+     "description": "Page not found"
+    
+  }
+
+
+
+}
