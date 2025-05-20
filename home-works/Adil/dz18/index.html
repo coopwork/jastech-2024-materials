@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Простой landing page с темной и светлой темой">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Landing Page</title>
+</head>
+<body class="light-mode">
+    <header>
+        <h1>Веб-программирование</h1>
+        <ul class="nav">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <button class="theme-switcher" id="themeSwitcher">Переключить тему</button>
+        <section class="hero">
+            <h1>Добро пожаловать!</h1>
+            <p>Подписаться ниже, чтобы узнать больше о веб-программировании.</p>
+            <button class="cta-button" id="ctaButton">Подписаться</button>
+        </section>
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Спасибо за подписку!</h2>
+            <p>Следите за нашими новостями.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024. Все права защищены.</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

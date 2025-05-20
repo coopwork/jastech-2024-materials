@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000000;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: #0ab443;
+  border-radius: 10px;
+  border: 2px solid #f8e003;
+  padding: 10px;
+  max-width: 350px;
+  box-shadow: 0 0 10px 3px #1e2f5d18;
+  transition: border-color .3s, box-shadow .3s;
+  animation: appear 3s normal;
+}
+
+.card:hover {
+  border-color: #bacaf6;
+  box-shadow: 0 0 15px 5px #0ab443;
+}
+
+@keyframes appear {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card__site {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site__logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.logo__anim__border {
+  position: absolute;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 0 0 5px 2px rgb(22, 22, 22);
+  background:
+    linear-gradient(0deg,
+      rgb(22, 22, 22),
+      rgb(22, 22, 22));
+  border: 2px outset #f8e003;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  animation:
+    logo_border_scale 1s infinite normal;
+}
+
+.site__logo:hover .logo__anim__border {
+  animation-play-state: paused;
+  border-color: #bacaf6;
+}
+
+@keyframes logo_border_scale {
+  to {
+    scale: 1.1;
+  }
+}
+
+.site__logo img {
+  position: relative;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card__body {
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.change_color_link {
+  color: #000000;
+  cursor: pointer;
+}
+
+.change_color_link:hover {
+  color: #f8e003;
+  transform: rotate(3deg) translate(5px);
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

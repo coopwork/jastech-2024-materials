@@ -1,0 +1,87 @@
+html {
+    background-color: #252323; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: #252323;
+    width: 300px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.form_input,
+.form_button {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.form_title {
+    text-align: left;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    color: #fff;
+}
+
+.form_group {
+    position: relative;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.form_label {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    color: #00a2ff;
+    transition: 0.3s;
+}
+
+.form_input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.form_input:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+
+.form_button {
+    padding: 10px 20px;
+    margin-right: 51px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form_button:focus,
+.form_button:hover {
+    background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form_input:focus ~ .form_label, 
+.form_input:not(:placeholder-shown) ~ .form_label {
+    top: -18px;
+    font-size: 12px;
+    color: #252323;
+}
